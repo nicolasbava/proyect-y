@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "webcard-old",
+    "public": "out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
