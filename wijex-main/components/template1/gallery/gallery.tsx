@@ -32,7 +32,7 @@ const Gallery = (props: GalleryProps) => {
                         width={900}
                         height={540}
                         alt="logo-wijex"
-                        className="rounded shadow-md"
+                        className="rounded h-full object-cover shadow-md"
                     />
                 </div>
                 <div className="md:w-1/4 h-auto px-4">

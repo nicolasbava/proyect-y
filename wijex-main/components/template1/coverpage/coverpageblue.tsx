@@ -17,7 +17,7 @@ const CoverPageBlue = (props: CoverPageProps) => {
   return (
     <section>
       <div className="absolute z-10 ">
-        <div className="mx-auto ml-7 mt-60 md:pl-10 md:mt-50 lg:ml-12 lg:pl-12 lg:pt-8 w-2/3" >
+        <div className="mx-auto ml-7 mt-52 md:pl-10 md:mt-50 lg:ml-12 lg:pl-12 lg:pt-8 w-3/5" >
           <div className="self-start lg:flex flex-col">
             <h1
               className="mb-3 text-3xl tracking-base font-bold leading-none uppercase title-font md:text-3xl lg:text-5xl"

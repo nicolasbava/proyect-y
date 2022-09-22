@@ -9,11 +9,11 @@ const PERSONAL_DATA = {
 
 const IMAGE_DATA = {
     BANNER: '/profile/coop-san-pedro-del-tingo/COOP-SAN-PEDRO-DEL-TINGO_2.jpg', 
-    INFORMATION: '/profile/coop-san-pedro-del-tingo/COOP-SAN-PEDRO-DEL-TINGO_3.jpg',
+    INFORMATION: '/profile/coop-san-pedro-del-tingo/COOP-SAN-PEDRO-DEL-TINGO_5.jpg',
     AVATAR: '/profile/coop-san-pedro-del-tingo/COOP-SAN-PEDRO-DEL-TINGO_AVATAR.png',
-    GALLERY_1: '/profile/coop-san-pedro-del-tingo/',
-    GALLERY_2: '/profile/coop-san-pedro-del-tingo/',
-    GALLERY_3: '/profile/coop-san-pedro-del-tingo/',
+    GALLERY_1: '/profile/coop-san-pedro-del-tingo/COOP-SAN-PEDRO-DEL-TINGO_GALLERY-1.jpg',
+    GALLERY_2: '/profile/coop-san-pedro-del-tingo/COOP-SAN-PEDRO-DEL-TINGO_GALLERY-2.jpg',
+    GALLERY_3: '/profile/coop-san-pedro-del-tingo/COOP-SAN-PEDRO-DEL-TINGO_GALLERY-3.jpg',
     BACKGROUND: '/profile/coop-san-pedro-del-tingo/COOP-SAN-PEDRO-DEL-TINGO_PORTADA.png'
 }
 
@@ -39,7 +39,7 @@ const SOCIALNET_DATA = {
 }
 
 const CURRICULUM_DATA = {
-    CURRICULUM_VITAE: '/profile/acabados-arquitectonicos-lisso/LISSO.pdf'
+    CURRICULUM_VITAE: '/profile/coop-san-pedro-del-tingo/CURRICULUM.pdf'
 }
 
 const NONE_DATA = {

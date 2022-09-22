@@ -26,7 +26,7 @@ const InformationProfileBlue = (props: BannerProps) => {
                             height={270}
                             
                             alt="logo-wijex"
-                            className="h-80 w-96 object-cover"
+                            className="h-96 w-96 object-cover"
                         />
                     </div>
                 </div>

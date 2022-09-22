@@ -74,16 +74,16 @@ const ProfilePage: NextPage = () => {
       <InformationProfileBlue
         name = {PERSONAL_DATA.NAME}
         description = {PERSONAL_DATA.HISTORY}
-        pdf=''
+        pdf={CURRICULUM_DATA.CURRICULUM_VITAE}
         imgInformation={IMAGE_DATA.INFORMATION}
       />
 
       <Plinth />
 
       <Gallery 
-          gallery_1=''
-          gallery_2=''
-          gallery_3=''
+          gallery_1={IMAGE_DATA.GALLERY_1}
+          gallery_2={IMAGE_DATA.GALLERY_2}
+          gallery_3={IMAGE_DATA.GALLERY_3}
 
        />
 
