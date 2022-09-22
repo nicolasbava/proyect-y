@@ -87,7 +87,7 @@ const FormContact = (props: FormContactProps) => {
             >
                 <div className='lg:flex lg:flex-row '>
                     <div className='lg:w-1/2 '>
-                        <div className='lg:absolute lg:h-4/5 lg:w-20 lg:bg-t5primary'/>
+                        <div className='lg:absolute lg:h-full lg:w-20 lg:bg-t5primary z-0'/>
                         <div className="sm:flex sm:flex-row mx-0 md:mb-8">
                             <div className="lg:flex flex-col z-10">
                                 <div className="flex items-center lg:items-start justify-center flex-col pt-10">
@@ -99,7 +99,7 @@ const FormContact = (props: FormContactProps) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-row pb-5 pt-5 justify-end items-end px-2">
+                        <div className="flex flex-row pb-5 pt-20 justify-center items-end px-2">
                             <div>
                                 <div className="flex flex-col self-end">
 

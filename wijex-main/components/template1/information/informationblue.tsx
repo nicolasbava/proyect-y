@@ -26,14 +26,14 @@ const InformationProfileBlue = (props: BannerProps) => {
                             height={270}
                             
                             alt="logo-wijex"
-                            className="h-56 w-56 object-cover"
+                            className="h-80 w-96 object-cover"
                         />
                     </div>
                 </div>
                 <div className="flex  z-10">
                     <div className="mx-auto md:pl-10 w-100 ">
                         <div className="flex-col flex  self-center p-10 sm:max-w-6xl xl:max-w-3xl z-10">
-                            <h1 className="mb-3 text-2xl font-bold leading-none tracking-normal uppercase text-blackcolor title-font lg:text-5xl">
+                            <h1 className="mb-3 text-2xl font-bold leading-none tracking-normal uppercase text-blackcolor title-font lg:text-3xl">
                                 {props.name}
                             </h1>
                             <p className="text-darkgray title-font font-bold text-justify">

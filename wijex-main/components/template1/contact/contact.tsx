@@ -38,7 +38,7 @@ const ContactProfile = (props: ContactProps) => {
                             width={200}
                             height={200}
                             alt="logo-wijex"
-                            className="h-48 w-48 object-cover rounded-full"
+                            className="h-80 w-80 object-contain rounded-full"
                         />
                     </div>
                 </div>
