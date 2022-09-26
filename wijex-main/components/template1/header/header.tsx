@@ -4,6 +4,9 @@ import { useRouter } from "next/router";
 import { QRCode } from "react-qr-svg";
 import FileSaver from "file-saver";
 
+// ATENTION !!
+import styles from '../template1.module.css'
+
 type Props = {
     name: string;
     description: string;
@@ -26,7 +29,7 @@ export default function HeaderNav(props: Props) {
         console.log("window.innerHeight", window.innerHeight);
       }, []);
     return (
-        <header className="bg-t1primary shadow mb-1">
+        <header className={`bg-t1primary shadow mb-1 ${styles.customHeader} `}  >
             <nav className="container mx-auto px-6 md:px-12 py-2">
                 <div className="md:flex justify-between items-center" >
                     <div className="flex justify-between items-center" >
@@ -62,7 +65,7 @@ export default function HeaderNav(props: Props) {
                         <div className='md:inline-flex md:flex-row md:ml-auto md:w-auto w-full md:items-center items-start  flex flex-col md:h-auto'>
                             <div className="lg:pr-10">
                                 <a
-                                    href={`${router.basePath}`}
+                                    href={`${router.basePath}#home`}
                                     className="text-sm leading-none tracking-tighter text-t1secondary title-font uppercase mx-3 cursor-pointer hover:text-third">
                                     INICIO
                                 </a>

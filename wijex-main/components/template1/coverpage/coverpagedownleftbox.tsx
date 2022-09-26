@@ -12,7 +12,8 @@ type CoverPageProps = {
 const CoverPageDownLeftBox = (props: CoverPageProps) => {
   const router = useRouter();
   return (
-    <section>
+    <section className='mt-20' id='home'>
+
       <div className="relative overflow-hidden">
         <img
           src={`${router.basePath + props.coverPageUrl}`}

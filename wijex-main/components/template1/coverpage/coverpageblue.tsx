@@ -15,7 +15,7 @@ type CoverPageProps = {
 const CoverPageBlue = (props: CoverPageProps) => {
   const router = useRouter();
   return (
-    <section>
+    <section className='mt-20' id='home'>
       <div className="absolute z-10 ">
         <div className="mx-auto ml-7 mt-8 sm:mt-36  md:pl-10 md:mt-52 lg:ml-12 lg:mt-64 lg:pl-28 lg:pt-8 w-3/5" >
           <div className="self-start lg:flex flex-col">
