@@ -4,6 +4,11 @@ import { useRouter } from "next/router";
 import { QRCode } from "react-qr-svg";
 import FileSaver from "file-saver";
 
+// ATTENTION !!
+// EVERY STYLE WITH "custom" IS IN THIS STYLESHEET
+import styles from '../template3.module.css'
+
+
 type Props = {
     name: string;
     description: string;
@@ -37,7 +42,8 @@ export default function HeaderNavVertical(props: Props) {
     }, []);
     return (
         <div >
-            <div className="rounded-r lg:hidden flex justify-between w-full p-6 items-center bg-t4primary mb-1 h-auto">
+            {/* MOBILE NAV BAR - fixed */}
+            <div className="fixed z-50 rounded-r lg:hidden flex justify-between w-full p-6 items-center bg-t4primary mb-1 h-auto">
                 <div className="flex justify-between  items-center space-x-3">
                     <Link href={'https://www.wijex.com'}>
                         <img src="/logo-wijex-blue.png"
@@ -62,7 +68,8 @@ export default function HeaderNavVertical(props: Props) {
                     </button>
                 </div>
             </div>
-            <div id="Main" className={`${show ? '' : '-translate-x-full'} transform lg:translate-x-0 ease-in-out transition duration-500 flex justify-start items-start h-full w-full base:w-64 flex-col`}>
+            {/* styled from template3.module.css */}
+            <div id="Main" className={`${show ? '' : '-translate-x-full'} transform lg:translate-x-0 ease-in-out transition duration-500 flex justify-start items-start h-full w-full base:w-64 flex-col ${styles.customHeader}`}>
                 <div className="hidden xl:flex justify-start p-6 items-center space-x-3">
                     <Link href={'https://www.wijex.com'}>
                         <img src="/logo-wijex-blue.png"
@@ -74,7 +81,7 @@ export default function HeaderNavVertical(props: Props) {
                 <div className={`${!show ? 'hidden' : ''} mt-8 flex flex-col space-x-3 lg:block lg:-translate-x-full`}>
                     <div className="mb-4 lg:mb-20 pl-3">
                         <a
-                            href={`${router.basePath}`}
+                            href={`${router.basePath}#home`}
                             className="text-base  font-semibold leading-none tracking-tighter text-t4fourth title-font uppercase mx-3 cursor-pointer hover:text-third">
                             INICIO
                         </a>

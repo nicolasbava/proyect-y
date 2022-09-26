@@ -1,0 +1,22 @@
+/* CUSTOM STYLES FOR TEMPLATE 3 */
+
+/* vertical header archive */
+.customHeader {
+    position: fixed;
+    height: 100%;
+    z-index: 99;
+    width: 132px;
+    box-shadow: inset 1px 1px 6px 2px rgb(0 0 0 / 22%);
+    background: white;
+}
+
+
+
+@media (min-width: 1024px) {
+    
+
+    /* layout archive */
+    .customLayout {
+        margin-left: 128px
+    }
+}

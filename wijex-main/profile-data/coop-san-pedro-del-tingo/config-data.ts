@@ -45,6 +45,13 @@ const CURRICULUM_DATA = {
 const NONE_DATA = {
     NONE: ''
 }
+
+const CUSTOM_CSS = {
+    
+}
+
+
+
 export {
     PERSONAL_DATA,
     IMAGE_DATA,

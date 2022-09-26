@@ -1,17 +1,19 @@
 import React from 'react';
 import Head from 'next/head';
 import type { NextPage } from 'next';
-import Layout from '../../components/template2/layout/layout';
-import FormContact from '../../components/template2/form/form';
-import { Gallery } from '../../components/template2/gallery/gallery';
-import { SocialMedia } from '../../components/template2/socialmedia/socialmedia';
-import { PlinthTitle } from '../../components/template2/plinthtitle/plinthtitle';
-import { CoverPageTextButton } from '../../components/template2/coverpage/coverpageTextButton';
-import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/acabados-arquitectonicos/config-data'; //CAMBIAR DIRECCION
-import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/acabados-arquitectonicos/config-data'; //CAMBIAR DIRECCION
+//import Layout from '../components/layout/layout';
+import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/lisso/config-data';
+import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/lisso/config-data';
 
+import Layout from '../../components/template3/layout/layout';
+import { CoverPageTwo } from '../../components/template3/coverpage/coverpagetwo';
+import { Plinth } from '../../components/template3/plinth/plinth';
+import { ContactProfileTwo } from '../../components/template3/contact/contacttwo';
+import { PlinthTitle } from '../../components/template3/plinthtitle/plinthtitle';
+import { Gallery } from '../../components/template3/gallery/gallery';
+import FormContact from '../../components/template3/form/form';
 
-const ProfilePage: NextPage = () => {
+const Home: NextPage = () => {
   return (
     <div>
       <Head>
@@ -19,6 +21,10 @@ const ProfilePage: NextPage = () => {
         <meta key="description" name="description" content="nombre de la app" />
         <title>{PERSONAL_DATA.NAME}</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          href="https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css"
+          rel="stylesheet"
+        />
       </Head>
       <Layout
         name={PERSONAL_DATA.NAME}
@@ -31,9 +37,9 @@ const ProfilePage: NextPage = () => {
         province={CONTACT_DATA.PROVINCE}
         country={CONTACT_DATA.COUNTRY}
         avatar={IMAGE_DATA.AVATAR}
-        url={'acabados-arquitectonicos'}
+        url={'lisso'}
       >
-        <CoverPageTextButton
+        <CoverPageTwo
           name={PERSONAL_DATA.NAME}
           description={PERSONAL_DATA.DESCRIPTION}
           colorName={PERSONAL_DATA.COLORNAME}
@@ -42,18 +48,22 @@ const ProfilePage: NextPage = () => {
           information={PERSONAL_DATA.HISTORY}
           pdf={CURRICULUM_DATA.CURRICULUM_VITAE}
           imgInformation={IMAGE_DATA.INFORMATION}
-          btnName={'PORTAFOLIO LISSO'}
         />
-        <SocialMedia
+        <Plinth />
+        <ContactProfileTwo
           name={PERSONAL_DATA.NAME}
-          linkedin={SOCIALNET_DATA.LINKEDIN}
-          youtube={SOCIALNET_DATA.YOUTUBE}
-          twitter={SOCIALNET_DATA.TWITTER}
-          facebook={SOCIALNET_DATA.FACEBOOK}
-          instagram={SOCIALNET_DATA.INSTAGRAM}
-          tiktok={SOCIALNET_DATA.TIKTOK}
-          wijex={SOCIALNET_DATA.WIJEX}
-          telegram={SOCIALNET_DATA.TELEGRAM}
+          email={CONTACT_DATA.EMAIL}
+          phone={CONTACT_DATA.PHONE}
+          address={CONTACT_DATA.ADDRESS}
+          number={CONTACT_DATA.NUMBER}
+          locality={CONTACT_DATA.LOCALITY}
+          province={CONTACT_DATA.PROVINCE}
+          country={CONTACT_DATA.COUNTRY}
+          avatar={IMAGE_DATA.AVATAR}
+          url={'lisso'}
+          information={PERSONAL_DATA.HISTORY}
+          pdf={CURRICULUM_DATA.CURRICULUM_VITAE}
+          imgInformation={IMAGE_DATA.INFORMATION}
         />
         <PlinthTitle
           title={'Galería'}
@@ -63,8 +73,9 @@ const ProfilePage: NextPage = () => {
           gallery_2={IMAGE_DATA.GALLERY_2}
           gallery_3={IMAGE_DATA.GALLERY_3}
         />
+
         <PlinthTitle
-          title={'Quiero más información'}
+          title={'Más información'}
         />
         <FormContact
           name={PERSONAL_DATA.NAME}
@@ -77,19 +88,19 @@ const ProfilePage: NextPage = () => {
           province={CONTACT_DATA.PROVINCE}
           country={CONTACT_DATA.COUNTRY}
           avatar={IMAGE_DATA.AVATAR}
-          url={'acabados-arquitectonicos'}
+          linkedin={SOCIALNET_DATA.LINKEDIN}
+          youtube={SOCIALNET_DATA.YOUTUBE}
+          twitter={SOCIALNET_DATA.TWITTER}
+          facebook={SOCIALNET_DATA.FACEBOOK}
+          instagram={SOCIALNET_DATA.INSTAGRAM}
+          tiktok={SOCIALNET_DATA.TIKTOK}
+          telegram={SOCIALNET_DATA.TELEGRAM}
+          wijex={SOCIALNET_DATA.WIJEX}
         />
-        {/* <PlinthTitle
-          title={'Quiero más información'}
-        /> */}
-        {/* <FormContactTwo
-          name={PERSONAL_DATA.NAME}
-          email={CONTACT_DATA.EMAIL}
-        /> */}
 
       </Layout>
     </div>
   )
 }
 
-export default ProfilePage
+export default Home

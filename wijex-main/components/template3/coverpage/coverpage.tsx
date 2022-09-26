@@ -17,7 +17,7 @@ const CoverPage = (props: CoverPageProps) => {
 
 
   return (
-    <section id='informationprofile'>
+    <section id='home'>
       <div className="flex flex-row w-full">
         <div className='absolute h-2/6 lg:h-2/4 w-10 lg:w-40 bg-t4primary' />
         <div className="flex flex-wrap w-1/3 lg:w-1/2 content-end justify-end bg-t4plinth z-99">        

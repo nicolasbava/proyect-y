@@ -47,15 +47,15 @@ const ContactProfile = (props: ContactProps) => {
                 </div>
                 <div className="flex">
                     <div className="mx-auto md:pl-10">
-                        <div className="flex-col flex  self-center p-10">
+                        <div className="flex-col flex self-center p-8">
                             <div className="flex items-center justify-center lg:items-start lg:justify-center flex-col">
-                                <h1 className="mb-3 text-2xl font-bold leading-none tracking-wide uppercase text-blackcolor title-font lg:text-3xl">
+                                <h1 className="mb-8 text-center text-2xl font-bold leading-none tracking-wide uppercase text-blackcolor title-font lg:text-3xl">
                                     {props.name}
                                 </h1>
                             </div>
                             <div className="grid grid-flow-row gap-4 mt-4" style={{ display: 'inline-block', justifyContent: 'start', alignContent: 'start' }}>
                             <a href={`https://api.whatsapp.com/send?phone=${props.phone}`} target="_blank" rel="noopener noreferrer">
-                                    <div className="flex items-center mb-3">
+                                    <div className="flex flex-col mb-10 sm:flex-row items-center">
                                         <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
                                             <img
                                                 src={`${router.basePath}/assert/icons/whatsapp-color.png`}
@@ -63,15 +63,17 @@ const ContactProfile = (props: ContactProps) => {
                                                 height={60}
                                                 
                                                 alt="logo-linkedin"
-                                                className="rounded-full"
+                                                className="rounded-full mb-5 sm:mb-0"
 
                                             />
                                         </div>
-                                        <h3 className="text-darkgray title-font text-l lg:text-xl ml-2">{props.phone}</h3>
+                                        <h3 className="text-darkgray title-font text-l lg:text-xl sm:ml-2">{props.phone}</h3>
                                     </div>
                                 </a>
+
+                                {/* PHONE - WHATSAPP - TELEFONO */}
                                 <a href={`tel:${props.phone}`} target="_blank" rel="noopener noreferrer">
-                                    <div className="flex items-center mb-3">
+                                    <div className="flex mb-10 flex-col sm:flex-row items-center">
                                         <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
                                             <img
                                                 src={`${router.basePath}/assert/icons/phone.svg`}
@@ -79,17 +81,17 @@ const ContactProfile = (props: ContactProps) => {
                                                 height={60}
                                                 
                                                 alt="logo-linkedin"
-                                                className="rounded-full"
+                                                className="rounded-full mb-5 sm:mb-0"
 
                                             />
                                         </div>
-                                        <h3 className="text-darkgray title-font text-l lg:text-xl ml-2">{props.phone}</h3>
+                                        <h3 className="text-darkgray title-font text-l lg:text-xl sm:ml-2">{props.phone}</h3>
                                     </div>
                                 </a>
-                                
 
+                                {/*  EMAIL */}
                                 <a href={`mailto:${props.email}`} target="_blank" rel="noopener noreferrer">
-                                    <div className="flex items-center mb-3" >
+                                    <div className="flex flex-col sm:flex-row mb-8 flex-wrap items-center" >
                                         <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
                                             <img
                                                 src={`${router.basePath}/assert/icons/email.svg`}
@@ -97,15 +99,17 @@ const ContactProfile = (props: ContactProps) => {
                                                 height={60}
                                                 
                                                 alt="logo-linkedin"
-                                                className="rounded-full"
+                                                className="rounded-full mb-5 sm:mb-0"
 
                                             />
                                         </div>
                                         <h3 className="text-darkgray title-font text-l lg:text-xl ml-2">{props.email}</h3>
                                     </div>
                                 </a>
+
+                                {/* LOCALIDAD - DIRECCION - ADDRESS */}
                                 <a href={`/${props.url}/map`} target="_blank" rel="noopener noreferrer">
-                                    <div className="flex items-center mb-3 cursor-pointer" onClick={() => onOpenModal()}>
+                                    <div className="flex flex-col sm:flex-row mb-10 items-center cursor-pointer" onClick={() => onOpenModal()}>
                                         <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
                                             <img
                                                 src={`${router.basePath}/assert/icons/direccion.svg`}
@@ -113,7 +117,7 @@ const ContactProfile = (props: ContactProps) => {
                                                 height={60}
                                                 
                                                 alt="logo-linkedin"
-                                                className="rounded-full"
+                                                className="rounded-full mb-5 sm:mb-0"
 
                                             />
                                         </div>

@@ -90,7 +90,7 @@ const FormContact = (props: FormContactProps) => {
     return (
         <section id='contactprofile'>
             <div
-                className='filter bg-t4background lg:mb-20'
+                className='filter py-10 bg-t4background lg:mb-20'
             >
                 <div className='lg:flex lg:flex-row'>
                     <div className='lg:w-1/2 '>

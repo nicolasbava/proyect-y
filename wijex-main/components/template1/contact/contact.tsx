@@ -46,38 +46,38 @@ const ContactProfile = (props: ContactProps) => {
                     <div className="mx-auto md:pl-10">
                         <div className="flex-col flex self-center p-10">
                             <div className="flex items-center justify-center lg:items-start lg:justify-center flex-col">
-                                <h1 className="mb-3 text-2xl font-bold leading-none tracking-wide uppercase text-blackcolor title-font lg:text-3xl">
+                                <h1 className="mb-3 text-center text-2xl font-bold leading-none tracking-wide uppercase text-blackcolor title-font lg:text-3xl">
                                     {props.name}
                                 </h1>
                             </div>
                             <div className="grid grid-flow-row gap-4 mt-4" style={{ display: 'inline-block', justifyContent: 'start', alignContent: 'start' }}>
-
+                                {/* PHONE - TELEFONO */}
                                 <a href={`tel:${props.phone}`} target="_blank" rel="noopener noreferrer">
-                                    <div className="flex items-center mb-3">
+                                    <div className="flex flex-col sm:flex-row items-center mb-3">
                                         <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
                                             <img
+                                                className="rounded-full mb-5 sm:mb-0"
                                                 src={`${router.basePath}/assert/icons/phoneblue.svg`}
                                                 width={40}
                                                 height={40}
                                                 alt="logo-linkedin"
-                                                className="rounded-full"
                                             />
                                         </div>
-                                        <h3 className="text-darkgray title-font text-base lg:text-lg ml-2 mt-1">
+                                        <h3 className="text-darkgray  mb-5 sm:mb-0 title-font text-base lg:text-lg ml-2 mt-1">
                                             {props.phone}
                                         </h3>
                                     </div>
                                 </a>
 
                                 <a href={`mailto:${props.email}`} target="_blank" rel="noopener noreferrer">
-                                    <div className="flex items-center mb-3" >
+                                    <div className="flex flex-col sm:flex-row items-center mb-3" >
                                         <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
                                             <img
                                                 src={`${router.basePath}/assert/icons/emailblue.svg`}
                                                 width={40}
                                                 height={40}
                                                 alt="logo-linkedin"
-                                                className="rounded-full"
+                                                className="rounded-full mb-5 sm:mb-0"
                                             />
                                         </div>
                                         <h3 className="text-darkgray title-font text-base lg:text-base ml-2 mt-1">
@@ -86,34 +86,35 @@ const ContactProfile = (props: ContactProps) => {
                                     </div>
                                 </a>
                                 <a href={`/${props.url}/map`} target="_blank" rel="noopener noreferrer">
-                                    <div className="flex items-center mb-3 cursor-pointer" onClick={() => onOpenModal()}>
-                                        <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                                    <div className="flex flex-col sm:flex-row items-center mb-3 cursor-pointer" onClick={() => onOpenModal()}>
+                                        <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-wrap  flex-shrink-0">
                                             <img
                                                 src={`${router.basePath}/assert/icons/direccionblue.svg`}
                                                 width={40}
                                                 height={40}
                                                 alt="logo-linkedin"
-                                                className="rounded-full"
+                                                className="rounded-full mb-5 sm:mb-0"
                                             />
                                         </div>
-                                        <h3 className="text-darkgray title-font text-base lg:text-lg ml-2 mt-1">
+                                        <h3 className="text-darkgray mb-5 sm:mb-0 title-font text-center sm:text-left text-base lg:text-lg ml-2 mt-1">
                                             {props.address} {props.number} - {props.locality} - {props.province} - {props.country}
                                         </h3>
                                     </div>
                                 </a>
+
+                                {/* PHONE - TELEFONO - WHATSAPP */}
                                 <a href={`https://api.whatsapp.com/send?phone=${props.phone}`} target="_blank" rel="noopener noreferrer">
-                                    <div className="flex items-center mb-3">
+                                    <div className="flex flex-col sm:flex-row flex-wrap  items-center mb-3">
                                         <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
                                             <img
+                                                className="rounded-full mb-5 sm:mb-0"
                                                 src={`${router.basePath}/assert/icons/whatsapp-color.png`}
                                                 width={40}
                                                 height={40}
                                                 alt="logo-linkedin"
-                                                className="rounded-full"
-
                                             />
                                         </div>
-                                        <h3 className="text-darkgray title-font text-base lg:text-lg ml-2 mt-1">
+                                        <h3 className="text-darkgray mb-5 sm:mb-0 title-font text-base lg:text-lg ml-2 mt-1">
                                             {props.phone}
                                         </h3>
                                     </div>

@@ -17,7 +17,7 @@ const SocialMediaWhite = (props: SocialMediaProps) => {
         <section id='contactprofile'>
             <div className="mx-auto w-100 mt-5 mb-10">
                 <div className="flex items-center justify-center lg:justify-center flex-col">
-                    <h1 className="mb-3 text-2xl font-bold leading-none tracking-wide uppercase text-blackcolor title-font lg:text-4xl">
+                    <h1 className="mb-3 text-2xl font-bold leading-none tracking-wide uppercase text-blackcolor title-font lg:text-4xl text-center">
                         {props.name}
                     </h1>
                     <div className="grid grid-flow-col gap-4 mt-5">

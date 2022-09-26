@@ -2,6 +2,9 @@ import React from "react";
 import FooterNav from "../footer/footer";
 import HeaderNavVertical from "../headervertical/header";
 
+import styles from '../template3.module.css'
+
+
 type Props = {
   name: string;
   description: string;
@@ -16,6 +19,7 @@ type Props = {
   url: string;
   children: any;
 };
+
 
 export default function Layout(props: Props) {
   return (
@@ -33,7 +37,7 @@ export default function Layout(props: Props) {
           />
         </div>
         <div className="lg:flex lg:flex-col">
-          <main className="flex-1">
+          <main className={ `flex-1 ${styles.customLayout}` }>
             {props.children}
           </main>
         </div>

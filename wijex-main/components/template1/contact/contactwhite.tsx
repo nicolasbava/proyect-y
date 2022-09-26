@@ -54,6 +54,8 @@ const ContactProfileWhite = (props: ContactProps) => {
                                 </h1>
                             </div>
                             <div className="grid grid-flow-row gap-4 mt-4" style={{ display: 'inline-block', justifyContent: 'start', alignContent: 'start' }}>
+                                
+                                {/* PHONE - TELEFONO - WHATSAPP */}
                                 <a href={`tel:${props.phone}`} target="_blank" rel="noopener noreferrer">
                                     <div className="flex items-center mb-3">
                                         <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
@@ -71,8 +73,9 @@ const ContactProfileWhite = (props: ContactProps) => {
                                     </div>
                                 </a>
 
+                                {/* EMAIL  */}
                                 <a href={`mailto:${props.email}`} target="_blank" rel="noopener noreferrer">
-                                    <div className="flex items-center mb-3" >
+                                    <div className="flex flex-wrap items-center mb-3" >
                                         <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
                                             <img
                                                 src={`${router.basePath}/assert/icons/emailblue.svg`}
@@ -87,6 +90,8 @@ const ContactProfileWhite = (props: ContactProps) => {
                                         <h3 className="text-darkgray title-font text-l lg:text-xl ml-2">{props.email}</h3>
                                     </div>
                                 </a>
+
+                                {/* ADDRESS - DIRECCION - LOCALIDAD */}
                                 <a href={`/${props.url}/map`} target="_blank" rel="noopener noreferrer">
                                     <div className="flex items-center mb-3 cursor-pointer" onClick={() => onOpenModal()}>
                                         <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">

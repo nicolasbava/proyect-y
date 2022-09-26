@@ -20,7 +20,7 @@ const InformationProfileEdit = (props: BannerProps) => {
             
             <div className="sm:flex sm:flex-row mx-0 justify-center">
                 <div className="hidden lg:flex flex-col self-center sm:max-w-5xl xl:max-w-2xl  z-10">
-                    <div className="self-start hidden lg:flex flex-col  text-white">
+                    <div className="ml-20 self-start hidden lg:flex flex-col  text-white">
                         <img
                             src={`${router.basePath + props.imgInformation}`}
                             width={450}

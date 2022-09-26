@@ -35,6 +35,7 @@ const CoverPageWhite = (props: CoverPageProps) => {
         </div>
       </div>
       <img
+        className='w-screen object-cover'
         src={`${router.basePath + props.coverPageUrl}`}
         alt="CoverPage/png"
       />

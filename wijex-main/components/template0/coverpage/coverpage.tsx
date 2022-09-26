@@ -20,7 +20,7 @@ const CoverPage = (props: CoverPageProps) => {
               className="mb-3 text-3xl font-bold leading-none tracking-tighter uppercase title-font lg:text-6xl"
               style={{ color: props.colorName }}
             >
-              {props.name}ddd
+              {props.name}
             </h1>
           </div>
           <div className=" w-1/2 lg:w-3/4 flex flex-col items-start">
@@ -36,6 +36,7 @@ const CoverPage = (props: CoverPageProps) => {
         </div>
       </div>
       <img
+        className='w-screen object-cover'
         src={`${router.basePath + props.coverPageUrl}`}
         alt="CoverPage/png"
       />

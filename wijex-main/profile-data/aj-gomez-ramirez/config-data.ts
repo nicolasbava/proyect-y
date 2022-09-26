@@ -3,7 +3,7 @@ const PERSONAL_DATA = {
     COLORNAME: '#000000',
     DESCRIPTION: 'Creando Espacios',
     COLORDESCRIPTION: '#000000',
-    HISTORY: 'Gran motivación para seguir perfeccionando habilidades y crecer profesionalmente. Capacidad de trabajo independiente y en equipo. Rendimiento bajo presión. Qué deseamos crear? compartir la visión y volverla realidad.'
+    HISTORY: 'Gran motivación para seguir perfeccionando habilidades y crecer profesionalmente. Capacidad de trabajo independiente y en equipo. Rendimiento bajo presión. ¿Qué deseamos crear? Compartir la visión y volverla realidad.'
 }
 
 const IMAGE_DATA = {

@@ -1,6 +1,7 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import dynamic from 'next/dynamic';
+import axios from 'axios';
 
 const MapPage: NextPage = () => {
     const [locations, setLocations] = React.useState<any[]>([]);
@@ -11,8 +12,8 @@ const MapPage: NextPage = () => {
     });
     React.useEffect(() => {
         let locAux: any[] = [];
-        locAux.push(Number(-84.164282)); //longitud
-        locAux.push(Number(9.9511749));
+        locAux.push(Number(-56.1821632));//longitud 56.1821632
+        locAux.push(Number(-34.9071174));//latitud -34.9071174
         setLocations(locAux);
     }, [])
     return (

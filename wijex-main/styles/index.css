@@ -5,5 +5,7 @@
 @layer base {
     html {
       font-family: Roboto, sans-serif;
+      animation: all 0.5s ease;
+      scroll-behavior: smooth;
     }
   }

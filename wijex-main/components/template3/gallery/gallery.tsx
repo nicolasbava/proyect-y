@@ -24,7 +24,7 @@ const Gallery = (props: GalleryProps) => {
     }
 
     return (
-        <section className="conteiner py-12">
+        <section className="conteiner py-20">
             <div className="flex flex-wrap mx-4 justify-center">
                 <div className="md:block md:w-1/2 px-4 sm:px-0 cursor-pointer" onClick={() => onOpenModal(0)}>
                     <img

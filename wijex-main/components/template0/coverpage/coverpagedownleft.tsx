@@ -14,10 +14,11 @@ const CoverPageDownLeft = (props: CoverPageProps) => {
       <section>     
       <div className="relative overflow-hidden">
         <img
+          className='w-screen object-cover'
           src={`${router.basePath + props.coverPageUrl}`}
           alt="CoverPage/png"
         />
-        <div className="absolute w-full bottom-10 left-10 lg:bottom-48 inset-x-0 leading-4">
+        <div className="absolute w-10/12 bottom-10 left-10 lg:bottom-96 lg:left-20 inset-x-0 leading-4">
           <div className="self-start lg:flex flex-col">
             <h1
               className="mb-3 text-xl font-bold leading-none tracking-tighter uppercase title-font md:text-3xl lg:text-5xl"

@@ -15,7 +15,7 @@ const InformationProfile = (props: BannerProps) => {
         window.open(PDF);
     }
     return (
-        <section >
+        <section id='informationprofile'>
             <div className="flex flex-row justify-center">
                 <div className="w-1/2 md:w-1/4 ">
                     <img
