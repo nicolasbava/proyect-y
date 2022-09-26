@@ -62,7 +62,7 @@ export default function HeaderNav(props: Props) {
                     <div
                         className={`${active ? 'hidden' : ''}   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
                     >
-                        <div className='md:inline-flex md:flex-row md:ml-auto md:w-auto w-full md:items-center items-start  flex flex-col md:h-auto'>
+                        <div className='mt-5 lg:mt-0 lg:inline-flex md:flex-row md:justify-between lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
                             <div className="lg:pr-10">
                                 <a
                                     href={`${router.basePath}#home`}

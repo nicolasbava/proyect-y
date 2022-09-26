@@ -29,8 +29,13 @@ const ContactProfile = (props: ContactProps) => {
     }
 
     return (
-        <section>
-            <div className="sm:flex sm:flex-row pt-10 mx-0 justify-center md:mb-8">
+        <section className='md:ml-10 pt-10'>
+            {/* title in tablet version */}
+            <h1 className="p-0 hidden sm:block text-center text-2xl font-bold leading-none tracking-wide uppercase text-blackcolor title-font lg:text-3xl">
+                {props.name}
+            </h1>
+            <div className="sm:flex sm:flex-row sm:ml-10  mx-0 justify-center md:mb-8">
+           
                 <div className="lg:flex flex-col self-center sm:max-w-5xl xl:max-w-2xl z-10">
                     <div className="mx-auto flex items-center justify-center flex-col">
                         <img
@@ -38,15 +43,16 @@ const ContactProfile = (props: ContactProps) => {
                             width={200}
                             height={200}
                             alt="logo-wijex"
-                            className="h-80 w-80 object-contain rounded-full"
+                            className="h-80 w-80 object-contain rounded-full -mt-5"
                         />
                     </div>
                 </div>
                 <div className="flex flex-wrap">
                     <div className="mx-auto md:pl-10">
-                        <div className="flex-col flex self-center p-10">
+                        <div className="flex-col flex self-center p-10 sm:py-5">
                             <div className="flex items-center justify-center lg:items-start lg:justify-center flex-col">
-                                <h1 className="mb-3 text-center text-2xl font-bold leading-none tracking-wide uppercase text-blackcolor title-font lg:text-3xl">
+                                {/* title in desktop version */}
+                                <h1 className="mb-3 sm:hidden lg-inline text-center text-2xl font-bold leading-none tracking-wide uppercase text-blackcolor title-font lg:text-3xl">
                                     {props.name}
                                 </h1>
                             </div>
@@ -108,7 +114,7 @@ const ContactProfile = (props: ContactProps) => {
                                 {/* PHONE - TELEFONO - WHATSAPP */}
                                 <a href={`https://api.whatsapp.com/send?phone=${props.phone}`} target="_blank" rel="noopener noreferrer">
                                     <div className="flex flex-col sm:flex-row flex-wrap  items-center mb-3">
-                                        <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                                        <div className=" w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
                                             <img
                                                 className="rounded-full mb-5 sm:mb-0"
                                                 src={`${router.basePath}/assert/icons/whatsapp-color.png`}
