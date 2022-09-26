@@ -59,7 +59,7 @@ const FormContact = (props: FormContactProps) => {
         setUserMessage('');
     }
     return (
-        <section className="lg:container px-10 py-6 mx-auto" >
+        <section className="lg:container px-10 py-6 mx-auto text-center sm:text-left" >
             <form onSubmit={sendEmail}>
                 <div className="grid grid-cols-1 gap-8 mt-4 sm:grid-cols-2 md:grid-cols-4">
                     <div hidden>

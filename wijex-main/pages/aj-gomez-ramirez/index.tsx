@@ -1,18 +1,20 @@
 import React from 'react';
 import Head from 'next/head';
 import type { NextPage } from 'next';
+import Layout from '../../components/template1/layout/layout';
+import { CoverPageBlue } from '../../components/template1/coverpage/coverpageblue';
+import { CoverPageLogo } from '../../components/template1/coverpage/CoverPageLogo';
+import { InformationProfile } from '../../components/template1/information/information';
 import { Gallery } from '../../components/template1/gallery/gallery';
 import FormContactTwo from '../../components/template1/form/form';
-import Layout from '../../components/template1/layout/layout';
 import { ContactProfile } from '../../components/template1/contact/contact';
 import { SocialMedia } from '../../components/template1/socialmedia/socialmedia';
 import { PlinthTitle } from '../../components/template1/plinthtitle/plinthtitle';
-import { InformationProfile } from '../../components/template1/information/information';
-import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/aj-gomez-ramirez/config-data'; //CAMBIAR DIRECCION
-import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/aj-gomez-ramirez/config-data'; //CAMBIAR DIRECCION
-import { CoverPageBlue } from '../../components/template1/coverpage/coverpageblue';
 import { Plinth } from '../../components/template1/plinth/plinth';
 
+// IMPORT DATA
+import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/aj-gomez-ramirez/config-data'; //CAMBIAR DIRECCION
+import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/aj-gomez-ramirez/config-data'; //CAMBIAR DIRECCION
 
 const ProfilePage: NextPage = () => {
   return (
@@ -36,7 +38,7 @@ const ProfilePage: NextPage = () => {
         avatar={IMAGE_DATA.AVATAR}
         url={'aj-gomez-ramirez'}
       >
-        <CoverPageBlue
+        <CoverPageLogo
           name={PERSONAL_DATA.NAME}
           description={PERSONAL_DATA.DESCRIPTION}
           colorName={PERSONAL_DATA.COLORNAME}

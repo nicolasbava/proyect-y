@@ -12,12 +12,12 @@ type CoverPageProps = {
   coverPageUrl: string;
 };
 
-const CoverPageBlue = (props: CoverPageProps) => {
+const CoverPageLogo = (props: CoverPageProps) => {
   const router = useRouter();
   return (
     <section>
       <div className="absolute z-10 ">
-        <div className="mx-auto ml-7 mt-8 sm:mt-36  md:pl-10 md:mt-52 lg:ml-12 lg:mt-64 lg:pl-28 lg:pt-8 w-3/5" >
+        <div className="mx-auto ml-7 mt-8 sm:mt-36 lg:mt-52 md:pl-10 md:mt-56 lg:ml-12 lg:pl-12 lg:pt-8 w-3/5" >
           <div className="self-start lg:flex flex-col">
             <h1
               className="mb-3 text-3xl tracking-base font-bold leading-none uppercase title-font md:text-3xl lg:text-5xl"
@@ -49,4 +49,4 @@ const CoverPageBlue = (props: CoverPageProps) => {
     </section>
   );
 }
-export { CoverPageBlue };
+export { CoverPageLogo };
