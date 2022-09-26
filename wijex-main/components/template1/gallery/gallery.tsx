@@ -26,14 +26,24 @@ const Gallery = (props: GalleryProps) => {
     return (
         <section className="conteiner py-12">
             <div className="flex flex-wrap mx-4 justify-center">
-                <div className="md:block md:w-1/2 px-4 sm:px-0 cursor-pointer" onClick={() => onOpenModal(0)}>
+                <div className="md:block md:w-1/2  px-4 sm:px-0 cursor-pointer" onClick={() => onOpenModal(0)}>
+                    {/* MOBILE VERSION */}
+                    <img
+                        src={`${router.basePath + props.gallery_1}`}
+                        width={450}
+                        height={540}
+                        alt="logo-wijex"
+                        className="rounded md:hidden md:h-full sm:object-cover shadow-md"
+                    />
+                    {/* TABLET - DESKTOP VERSION */}
                     <img
                         src={`${router.basePath + props.gallery_1}`}
                         width={900}
                         height={540}
                         alt="logo-wijex"
-                        className="rounded h-full object-cover shadow-md"
+                        className=" hidden md:flex rounded md:h-full sm:object-cover shadow-md"
                     />
+                    
                 </div>
                 <div className="md:w-1/4 h-auto px-4">
                     <div className="mb-8 mt-8 md:mt-0 cursor-pointer" onClick={() => onOpenModal(1)}>

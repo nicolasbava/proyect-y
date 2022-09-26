@@ -3,6 +3,8 @@ import { useRouter } from 'next/router';
 type BannerProps = {
     name: string;
     description: string;
+    description2: string;
+    history: string;
     pdf: string;
     imgInformation: string;
     btnName: string;
@@ -39,6 +41,9 @@ const InformationProfile = (props: BannerProps) => {
                             </h1>
                             <p className="text-justify text-darkgray title-font font-bold">
                                 {props.description}
+                            </p>
+                            <p className="text-justify text-darkgray title-font font-bold">
+                                {props.history}
                             </p>
                             <div className="pt-6">
                                 <button onClick={() => onResumeClick()}

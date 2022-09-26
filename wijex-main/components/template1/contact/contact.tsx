@@ -51,6 +51,7 @@ const ContactProfile = (props: ContactProps) => {
                                 </h1>
                             </div>
                             <div className="grid grid-flow-row gap-4 mt-4" style={{ display: 'inline-block', justifyContent: 'start', alignContent: 'start' }}>
+                                
                                 {/* PHONE - TELEFONO */}
                                 <a href={`tel:${props.phone}`} target="_blank" rel="noopener noreferrer">
                                     <div className="flex flex-col sm:flex-row items-center mb-3">
@@ -63,12 +64,13 @@ const ContactProfile = (props: ContactProps) => {
                                                 alt="logo-linkedin"
                                             />
                                         </div>
-                                        <h3 className="text-darkgray  mb-5 sm:mb-0 title-font text-base lg:text-lg ml-2 mt-1">
+                                        <h3 className="text-darkgray  mb-5 sm:mb-0 title-font text-base lg:text-lg sm:ml-2 mt-1">
                                             {props.phone}
                                         </h3>
                                     </div>
                                 </a>
 
+                                {/* EMAIL */}
                                 <a href={`mailto:${props.email}`} target="_blank" rel="noopener noreferrer">
                                     <div className="flex flex-col sm:flex-row items-center mb-3" >
                                         <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
@@ -80,11 +82,12 @@ const ContactProfile = (props: ContactProps) => {
                                                 className="rounded-full mb-5 sm:mb-0"
                                             />
                                         </div>
-                                        <h3 className="text-darkgray title-font text-base lg:text-base ml-2 mt-1">
+                                        <h3 className="text-darkgray  title-font text-base lg:text-base sm:ml-2 mt-1">
                                             {props.email}
                                         </h3>
                                     </div>
                                 </a>
+                                {/* ADDRESS - LOCALIDAD DIRECCION */}
                                 <a href={`/${props.url}/map`} target="_blank" rel="noopener noreferrer">
                                     <div className="flex flex-col sm:flex-row items-center mb-3 cursor-pointer" onClick={() => onOpenModal()}>
                                         <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-wrap  flex-shrink-0">
@@ -96,7 +99,7 @@ const ContactProfile = (props: ContactProps) => {
                                                 className="rounded-full mb-5 sm:mb-0"
                                             />
                                         </div>
-                                        <h3 className="text-darkgray mb-5 sm:mb-0 title-font text-center sm:text-left text-base lg:text-lg ml-2 mt-1">
+                                        <h3 className="text-darkgray mb-5 sm:mb-0 title-font text-center sm:text-left text-base lg:text-lg sm:ml-2 mt-1">
                                             {props.address} {props.number} - {props.locality} - {props.province} - {props.country}
                                         </h3>
                                     </div>
@@ -114,7 +117,7 @@ const ContactProfile = (props: ContactProps) => {
                                                 alt="logo-linkedin"
                                             />
                                         </div>
-                                        <h3 className="text-darkgray mb-5 sm:mb-0 title-font text-base lg:text-lg ml-2 mt-1">
+                                        <h3 className="text-darkgray mb-5 sm:mb-0 title-font text-base lg:text-lg sm:ml-2 mt-1">
                                             {props.phone}
                                         </h3>
                                     </div>
