@@ -54,24 +54,10 @@ const ContactProfile = (props: ContactProps) => {
                                 </h1>
                             </div>
                             <div className="grid grid-flow-row gap-4 mt-4" style={{ display: 'inline-block', justifyContent: 'start', alignContent: 'start' }}>
-                            <a href={`https://api.whatsapp.com/send?phone=${props.phone}`} target="_blank" rel="noopener noreferrer">
-                                    <div className="flex flex-col mb-10 sm:flex-row items-center">
-                                        <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
-                                            <img
-                                                src={`${router.basePath}/assert/icons/whatsapp-color.png`}
-                                                width={60}
-                                                height={60}
-                                                
-                                                alt="logo-linkedin"
-                                                className="rounded-full mb-5 sm:mb-0"
 
-                                            />
-                                        </div>
-                                        <h3 className="text-darkgray title-font text-l lg:text-xl sm:ml-2">{props.phone}</h3>
-                                    </div>
-                                </a>
+                                
 
-                                {/* PHONE - WHATSAPP - TELEFONO */}
+                                {/* PHONE - TELEFONO */}
                                 <a href={`tel:${props.phone}`} target="_blank" rel="noopener noreferrer">
                                     <div className="flex mb-10 flex-col sm:flex-row items-center">
                                         <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
@@ -121,9 +107,26 @@ const ContactProfile = (props: ContactProps) => {
 
                                             />
                                         </div>
-                                        <h3 className="text-darkgray title-font text-l lg:text-xl ml-2">
+                                        <h3 className="text-darkgray text-center sm:text-left title-font text-l lg:text-xl ml-2">
                                             {props.address} {props.number} - {props.locality} - {props.province} - {props.country}
                                         </h3>
+                                    </div>
+                                </a>
+                                {/* WHATSAPP */}
+                                <a href={`https://api.whatsapp.com/send?phone=${props.phone}`} target="_blank" rel="noopener noreferrer">
+                                    <div className="flex flex-col mb-10 sm:flex-row items-center">
+                                        <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                                            <img
+                                                src={`${router.basePath}/assert/icons/whatsapp-color.png`}
+                                                width={60}
+                                                height={60}
+                                                
+                                                alt="logo-linkedin"
+                                                className="rounded-full mb-5 sm:mb-0"
+
+                                            />
+                                        </div>
+                                        <h3 className="text-darkgray title-font text-l lg:text-xl sm:ml-2">{props.phone}</h3>
                                     </div>
                                 </a>
                             </div>
