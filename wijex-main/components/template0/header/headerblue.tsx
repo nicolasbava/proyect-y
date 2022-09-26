@@ -13,6 +13,7 @@ type Props = {
     avatar: string;
     url: string;
 };
+
 export default function HeaderNav(props: Props) {
     const router = useRouter();
     const [active, setActive] = useState(true);

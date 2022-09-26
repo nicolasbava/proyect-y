@@ -49,6 +49,7 @@ const ProfilePage: NextPage = () => {
         <InformationProfile
           name={PERSONAL_DATA.NAME}
           description={PERSONAL_DATA.HISTORY}
+          description2={PERSONAL_DATA.DESCRIPTION}
           pdf={CURRICULUM_DATA.CURRICULUM_VITAE}
           imgInformation={IMAGE_DATA.INFORMATION}
           btnName={'PERFIL PERSONAL'}
