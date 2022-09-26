@@ -64,21 +64,21 @@ export default function HeaderNav(props: Props) {
                             <div className="lg:pr-10 py-1">
                                 <a
                                     href={`${router.basePath}`}
-                                    className="text-sm font-semibold leading-none tracking-tighter text-whitecolor title-font uppercase mx-3 text-whitecolor cursor-pointer hover:text-third">
+                                    className="text-sm font-semibold leading-none tracking-tighter title-font uppercase mx-3 text-whitecolor cursor-pointer hover:text-third">
                                     INICIO
                                 </a>
                             </div>
                             <div className="lg:px-10 py-1">
                                 <a
                                     href={`${router.basePath}#informationprofile`}
-                                    className="text-sm font-semibold leading-none tracking-tighter text-whitecolor title-font uppercase mx-3 text-whitecolor cursor-pointer hover:text-third">
+                                    className="text-sm font-semibold leading-none tracking-tighter title-font uppercase mx-3 text-whitecolor cursor-pointer hover:text-third">
                                     SOBRE MÍ
                                 </a>
                             </div>
                             <div className="lg:px-10 py-1">
                                 <a
                                     href={`${router.basePath}#galleryprofile`}
-                                    className="text-sm font-semibold leading-none tracking-tighter text-whitecolor title-font uppercase mx-3 text-whitecolor cursor-pointer hover:text-third"
+                                    className="text-sm font-semibold leading-none tracking-tighter title-font uppercase mx-3 text-whitecolor cursor-pointer hover:text-third"
                                 >
                                     Galería
                                 </a>
@@ -86,7 +86,7 @@ export default function HeaderNav(props: Props) {
                             <div className="lg:pl-10 py-1">
                                 <a
                                     href={`${router.basePath}#contactprofile`}
-                                    className="text-sm font-semibold leading-none tracking-tighter text-whitecolor title-font uppercase mx-3 text-whitecolor cursor-pointer hover:text-third"
+                                    className="text-sm font-semibold leading-none tracking-tighter title-font uppercase mx-3 text-whitecolor cursor-pointer hover:text-third"
                                 >
                                     CONTACTO
                                 </a>
@@ -94,7 +94,7 @@ export default function HeaderNav(props: Props) {
                             <div className='lg:pl-10 py-1'>
                                 <text
                                     onClick={() => { setActive(false); setShowModal(true) }}
-                                    className="text-sm font-semibold leading-none tracking-tighter text-whitecolor title-font uppercase mx-3 text-whitecolor cursor-pointer hover:text-third"
+                                    className="text-sm font-semibold leading-none tracking-tighter title-font uppercase mx-3 text-whitecolor cursor-pointer hover:text-third"
                                 >
                                     COMPARTIR
                                 </text>
