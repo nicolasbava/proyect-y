@@ -86,7 +86,7 @@ const FormContact = (props: FormContactProps) => {
                 style={{ backgroundImage: `url(${router.basePath + props.background})` }}
                 className='bg-cover bg-center bg-no-repeat'
             >
-                <div className="bg-t2primary bg-opacity-50">
+                <div className="bg-t2primary bg-opacity-50 text-center sm:text-left">
                     <div className='lg:flex lg:flex-row'>
                         <div className='lg:w-1/2'>
                             <div className="sm:flex sm:flex-row pt-10 mx-0 justify-center md:mb-8">
@@ -175,7 +175,7 @@ const FormContact = (props: FormContactProps) => {
                                         <div className="grid grid-cols-1 gap-8 mt-4 sm:grid-cols-2 md:grid-cols-2">
                                            
                                             <div>
-                                                <label htmlFor="userName" className="pl-4 text-t2labelcolor dark:text-secondary">Nombre</label>
+                                                <label htmlFor="userName" className="sm:pl-4 text-t2labelcolor dark:text-secondary">Nombre</label>
                                                 <input
                                                     id="username"
                                                     name='userName'
@@ -185,7 +185,7 @@ const FormContact = (props: FormContactProps) => {
                                                     className="block w-full  px-4 py-2 mt-2 text-primary bg-t2inputcolor border border-t2inputcolor rounded-md dark:bg-t2inputcolor dark:text-primary dark:border-t2inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
                                             </div>
                                             <div>
-                                                <label className="pl-4 text-t2labelcolor dark:text-secondary">Asunto</label>
+                                                <label className="sm:pl-4 text-t2labelcolor dark:text-secondary">Asunto</label>
                                                 <input
                                                     id="subject"
                                                     name="subject"
@@ -195,7 +195,7 @@ const FormContact = (props: FormContactProps) => {
                                                     className="block w-full px-4 py-2 mt-2 text-t2labelcolor bg-t2inputcolor border border-t2inputcolor rounded-md dark:bg-t2inputcolor dark:text-primary dark:border-t2inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
                                             </div>
                                             <div>
-                                                <label className="pl-4 text-t2labelcolor dark:text-secondary" >E-mail</label>
+                                                <label className="sm:pl-4 text-t2labelcolor dark:text-secondary" >E-mail</label>
                                                 <input
                                                     id="userEmail"
                                                     name="userEmail"
@@ -205,7 +205,7 @@ const FormContact = (props: FormContactProps) => {
                                                     className="block w-full px-4 py-2 mt-2 text-t2labelcolor bg-t2inputcolor border border-t2inputcolor rounded-md dark:bg-t2inputcolor dark:text-primary dark:border-t2inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
                                             </div>
                                             <div>
-                                                <label className="pl-4 text-t2labelcolor dark:text-secondary">Teléfono</label>
+                                                <label className="sm:pl-4 text-t2labelcolor dark:text-secondary">Teléfono</label>
                                                 <input
                                                     id="userPhone"
                                                     name="userPhone"
@@ -217,7 +217,7 @@ const FormContact = (props: FormContactProps) => {
                                         </div>
                                         <div className="grid grid-cols-1 gap-8 mt-4">
                                             <div className="relative mb-4">
-                                                <label className="pl-4 text-t2labelcolor dark:text-secondary">Dejá tu consulta</label>
+                                                <label className="sm:pl-4 text-t2labelcolor dark:text-secondary">Dejá tu consulta</label>
                                                 <textarea
                                                     id="userMessage"
                                                     name="userMessage"

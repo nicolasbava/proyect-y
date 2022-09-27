@@ -7,9 +7,10 @@ import { Gallery } from '../../components/template2/gallery/gallery';
 import { SocialMedia } from '../../components/template2/socialmedia/socialmedia';
 import { PlinthTitle } from '../../components/template2/plinthtitle/plinthtitle';
 import { CoverPageTextButton } from '../../components/template2/coverpage/coverpageTextButton';
+
+// import data
 import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/masajes-terapeuticos/config-data'; //CAMBIAR DIRECCION
 import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/masajes-terapeuticos/config-data'; //CAMBIAR DIRECCION
-
 
 const ProfilePage: NextPage = () => {
   return (
@@ -31,7 +32,7 @@ const ProfilePage: NextPage = () => {
         province={CONTACT_DATA.PROVINCE}
         country={CONTACT_DATA.COUNTRY}
         avatar={IMAGE_DATA.AVATAR}
-        url={'eli-comunidad-digital'}
+        url={'masajes-terapeuticos'}
       >
         <CoverPageTextButton
           name={PERSONAL_DATA.NAME}
@@ -42,7 +43,7 @@ const ProfilePage: NextPage = () => {
           information={PERSONAL_DATA.HISTORY}
           pdf={CURRICULUM_DATA.CURRICULUM_VITAE}
           imgInformation={IMAGE_DATA.INFORMATION}
-          btnName={'Historia de vida'}
+          btnName={'PRODUCTOS WIJEX'}
         />
         <SocialMedia
           name={PERSONAL_DATA.NAME}

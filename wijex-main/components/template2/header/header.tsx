@@ -58,7 +58,7 @@ export default function HeaderNav(props: Props) {
                         </button>
                     </div>
                     <div
-                        className={`${active ? 'hidden' : ''}   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+                        className={`${active ? 'hidden' : ''}  mt-3 md:mt-0 w-full lg:inline-flex lg:flex-grow lg:w-auto`}
                     >
                         <div className='md:inline-flex md:flex-row md:ml-auto md:w-auto w-full md:items-center items-start  flex flex-col md:h-auto'>
                             <div className="lg:pr-10 py-1">

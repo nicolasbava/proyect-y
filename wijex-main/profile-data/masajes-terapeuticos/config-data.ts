@@ -1,10 +1,15 @@
 const PERSONAL_DATA = {
     NAME: 'MASAJES TERAPEUTICOS',
     COLORNAME: '#ff0000',
-    DESCRIPTION: '',
+    DESCRIPTION: 'JOSE GONZALEZ',
     COLORDESCRIPTION: '#ff6600',
-    HISTORY: 'Todos necesitamos un tiempo para relajarnos. Masajes terapeuticos descontracturantes relajantes.Piedras calientes.Aromaterapia.Reflexologia.Maderoterapia rodillo reductor y modelador.'
+    HISTORY: 'Todos necesitamos un tiempo para relajarnos. Masajes terapéuticos descontracturantes relajantes. Piedras calientes. Aromaterapia. reflexología. Maderoterapia rodillo reductor y modelador.'
 }
+
+// TEMPLATE 2
+// COLOR TEMPLATE #000
+// 1 #ff0000
+// 2 #ff6600
 
 const IMAGE_DATA = {
     BANNER: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_PORTADA.png', //CAMBIAR DIRECCION DE LAS IMAGENES
