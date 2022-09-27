@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 type BannerProps = {
     name: string;
     description: string;
-    description2: string;
+    // description2: string;
     pdf: string;
     imgInformation: string;
     btnName: string;
@@ -23,7 +23,7 @@ const InformationProfile = (props: BannerProps) => {
     }
     return (
         <section id='informationprofile'>
-            <div className="sm:flex sm:flex-row mx-0 justify-center">
+            <div className="sm:flex sm:flex-row mx-0 justify-center lg:ml-16">
                 <div className="hidden lg:flex flex-col self-center sm:max-w-5xl xl:max-w-2xl  z-10">
                     <div className="self-start hidden lg:flex flex-col  text-white">
                         <img
@@ -46,7 +46,7 @@ const InformationProfile = (props: BannerProps) => {
                             </h1>
 
                             {/* PROVISORY DESCRIPTION ONLY IN MOBILE */}
-                            <h3 className='text-darkgray sm:hidden title-font uppercase font-bold mb-4' >{props.description2}</h3>
+                            {/* <h3 className='text-darkgray sm:hidden title-font uppercase font-bold mb-4' >{props.description2}</h3> */}
                             
                             {/* HISTORY, BAD CALLED DESCRIPTION */}
                             <p className="text-justify text-darkgray title-font font-bold">

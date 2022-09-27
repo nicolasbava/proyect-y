@@ -30,10 +30,11 @@ const ContactProfile = (props: ContactProps) => {
 
     return (
         <section className='md:ml-10 pt-10'>
-            {/* title in tablet version */}
-            <h1 className="p-0 hidden sm:block text-center text-2xl font-bold leading-none tracking-wide uppercase text-blackcolor title-font lg:text-3xl">
+            {/* === title in tablet version === */}
+            <h1 className="p-0 mb-10 hidden sm:block text-center text-2xl font-bold leading-none tracking-wide uppercase text-blackcolor title-font lg:text-3xl">
                 {props.name}
             </h1>
+
             <div className="sm:flex sm:flex-row sm:ml-10  mx-0 justify-center md:mb-8">
            
                 <div className="lg:flex flex-col self-center sm:max-w-5xl xl:max-w-2xl z-10">
@@ -51,7 +52,7 @@ const ContactProfile = (props: ContactProps) => {
                     <div className="mx-auto md:pl-10">
                         <div className="flex-col flex self-center p-10 sm:py-5">
                             <div className="flex items-center justify-center lg:items-start lg:justify-center flex-col">
-                                {/* title in desktop version */}
+                                {/* === title in desktop version === */}
                                 <h1 className="mb-3 sm:hidden lg-inline text-center text-2xl font-bold leading-none tracking-wide uppercase text-blackcolor title-font lg:text-3xl">
                                     {props.name}
                                 </h1>

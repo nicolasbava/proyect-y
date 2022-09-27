@@ -5,8 +5,8 @@ type PlinthTitleProps = {
 const PlinthTitle = (props: PlinthTitleProps) => {
   return (
     <section id='galleryprofile'>
-      <div className="py-4 flex center items-center bg-t5primary">
-        <h1 className="mx-auto text-lg font-semibold leading-none tracking-wide text-t5secondary lg:text-lg title-font">
+      <div className="py-4 flex center items-center" style={{backgroundColor: '#dc7650a6', color:'white', height:100}}>
+        <h1 className="mx-auto text-lg font-semibold leading-none tracking-wide lg:text-lg title-font">
           {props.title}
         </h1>
       </div>

@@ -38,7 +38,7 @@ const ProfilePage: NextPage = () => {
         avatar={IMAGE_DATA.AVATAR}
         url={'aj-gomez-ramirez'}
       >
-        <CoverPageLogo
+        <CoverPageBlue
           name={PERSONAL_DATA.NAME}
           description={PERSONAL_DATA.DESCRIPTION}
           colorName={PERSONAL_DATA.COLORNAME}
@@ -49,7 +49,7 @@ const ProfilePage: NextPage = () => {
         <InformationProfile
           name={PERSONAL_DATA.NAME}
           description={PERSONAL_DATA.HISTORY}
-          description2={PERSONAL_DATA.DESCRIPTION}
+          // description2={PERSONAL_DATA.DESCRIPTION}
           pdf={CURRICULUM_DATA.CURRICULUM_VITAE}
           imgInformation={IMAGE_DATA.INFORMATION}
           btnName={'PERFIL PERSONAL'}

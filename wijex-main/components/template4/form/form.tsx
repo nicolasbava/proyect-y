@@ -83,11 +83,11 @@ const FormContact = (props: FormContactProps) => {
     return (
         <section id='contactprofile'>
             <div
-                className='bg-t5background lg:mb-20'
+                className='bg-t5background text-center sm:text-left'
             >
                 <div className='lg:flex lg:flex-row '>
                     <div className='lg:w-1/2 '>
-                        <div className='lg:absolute lg:h-full lg:w-20 lg:bg-t5primary z-0'/>
+                        {/* <div className='lg:absolute lg:h-full lg:w-20 lg:bg-t5primary z-0'/> */}
                         <div className="sm:flex sm:flex-row mx-0 md:mb-8">
                             <div className="lg:flex flex-col z-10">
                                 <div className="flex items-center lg:items-start justify-center flex-col pt-10">
@@ -99,7 +99,7 @@ const FormContact = (props: FormContactProps) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-row pb-5 pt-20 justify-center items-end px-2">
+                        <div className="flex flex-row pb-5 pt-20  lg:pt-8 justify-center items-center sm:items-end px-10">
                             <div>
                                 <div className="flex flex-col self-end">
 
@@ -177,7 +177,7 @@ const FormContact = (props: FormContactProps) => {
                                                 className="block w-full px-4 py-2 mt-2 text-t5labelcolor bg-t5inputcolor border border-t5inputcolor rounded-md dark:bg-t5inputcolor dark:text-primary dark:border-t5inputcolor dark:focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-t5secondary duration-200 ease-in-out" />
                                         </div>
                                         <div>
-                                            <label htmlFor="userName" className="pl-4 text-t5labelcolor dark:text-secondary">Nombre</label>
+                                            <label htmlFor="userName" className="sm:pl-4 text-t5labelcolor dark:text-secondary">Nombre</label>
                                             <input
                                                 id="username"
                                                 name='userName'
@@ -187,7 +187,7 @@ const FormContact = (props: FormContactProps) => {
                                                 className="block w-full  px-4 py-2 mt-2 text-primary bg-t5inputcolor border border-t5inputcolor rounded-md dark:bg-t5inputcolor dark:text-primary dark:border-t5inputcolor dark:focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-t5secondary duration-200 ease-in-out" />
                                         </div>
                                         <div>
-                                            <label className="pl-4 text-t5labelcolor dark:text-secondary">Asunto</label>
+                                            <label className="sm:pl-4 text-t5labelcolor dark:text-secondary">Asunto</label>
                                             <input
                                                 id="subject"
                                                 name="subject"
@@ -197,7 +197,7 @@ const FormContact = (props: FormContactProps) => {
                                                 className="block w-full px-4 py-2 mt-2 text-t5labelcolor bg-t5inputcolor border border-t5inputcolor rounded-md dark:bg-t5inputcolor dark:text-primary dark:border-t5inputcolor dark:focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-t5secondary duration-200 ease-in-out" />
                                         </div>
                                         <div>
-                                            <label className="pl-4 text-t5labelcolor dark:text-secondary" >E-mail</label>
+                                            <label className="sm:pl-4 text-t5labelcolor dark:text-secondary" >E-mail</label>
                                             <input
                                                 id="userEmail"
                                                 name="userEmail"
@@ -207,7 +207,7 @@ const FormContact = (props: FormContactProps) => {
                                                 className="block w-full px-4 py-2 mt-2 text-t5labelcolor bg-t5inputcolor border border-t5inputcolor rounded-md dark:bg-t5inputcolor dark:text-primary dark:border-t5inputcolor dark:focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-t5secondary duration-200 ease-in-out" />
                                         </div>
                                         <div>
-                                            <label className="pl-4 text-t5labelcolor dark:text-secondary">Teléfono</label>
+                                            <label className="sm:pl-4 text-t5labelcolor dark:text-secondary">Teléfono</label>
                                             <input
                                                 id="userPhone"
                                                 name="userPhone"
@@ -217,9 +217,9 @@ const FormContact = (props: FormContactProps) => {
                                                 className="block w-full px-4 py-2 mt-2 text-primary bg-t5inputcolor border border-t5inputcolor rounded-md dark:bg-t5inputcolor dark:text-primary dark:border-t5inputcolor dark:focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-t5secondary duration-200 ease-in-out" />
                                         </div>
                                     </div>
-                                    <div className="grid grid-cols-1 gap-8 mt-4">
+                                    <div className="grid grid-cols-1 gap-8 mt-8">
                                         <div className="relative mb-4">
-                                            <label className="pl-4 text-t5labelcolor dark:text-secondary">Dejá tu consulta</label>
+                                            <label className="sm:pl-4 text-t5labelcolor dark:text-secondary">Dejá tu consulta</label>
                                             <textarea
                                                 id="userMessage"
                                                 name="userMessage"
@@ -228,7 +228,7 @@ const FormContact = (props: FormContactProps) => {
                                                 className="block w-full px-4 py-3 pb-16 mt-2 text-primary bg-t5inputcolor border border-t5inputcolor rounded-md dark:bg-t5inputcolor dark:text-primary dark:border-t5inputcolor dark:focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-t5secondary duration-200 ease-in-out"></textarea>
                                         </div>
                                     </div>
-                                    <div className="flex justify-center lg:justify-end mt-6">
+                                    <div className="flex justify-center lg:justify-start mt-6 pb-10">
                                         <button
                                             type='submit'
                                             className="px-8 pt-5 pb-4 leading-5 transition-colors duration-200 transform bg-btncolor rounded-md hover:bg-btncolor focus:outline-none focus:bg-btncolor shadow-lg">

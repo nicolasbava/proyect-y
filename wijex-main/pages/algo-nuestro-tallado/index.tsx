@@ -3,13 +3,16 @@ import Head from 'next/head';
 import type { NextPage } from 'next';
 import Layout from '../../components/template4/layout/layout';
 import FormContact from '../../components/template4/form/form';
-import { Plinth } from '../../components/template4/plinth/plinth';
 import { Gallery } from '../../components/template4/gallery/gallery';
 import { CoverPage } from '../../components/template4/coverpage/coverpage';
+import { Plinth } from '../../components/template4/plinth/plinth';
 import { PlinthTitle } from '../../components/template4/plinthtitle/plinthtitle';
-import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/algo-nuestro-tallado/config-data';
 import { InformationProfileTextBtn } from '../../components/template4/information/informationtextbtn';
+
+// import data
+import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/algo-nuestro-tallado/config-data';
 import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/algo-nuestro-tallado/config-data';
+
 
 const Home: NextPage = () => {
   return (

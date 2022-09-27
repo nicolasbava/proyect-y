@@ -57,7 +57,7 @@ export default function HeaderNav() {
                         <div className='md:inline-flex md:flex-row md:ml-auto md:w-auto w-full md:items-center items-start  flex flex-col md:h-auto'>
                             <div className="lg:pr-10">
                                 <a
-                                    href={`${router.basePath}`}
+                                    href={`${router.basePath}#home`}
                                     className="text-sm leading-none tracking-tighter text-secondary title-font uppercase mx-3 cursor-pointer hover:text-third">
                                     INICIO
                                 </a>

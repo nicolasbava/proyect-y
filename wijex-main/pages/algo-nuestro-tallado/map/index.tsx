@@ -12,8 +12,8 @@ const MapPage: NextPage = () => {
     });
     React.useEffect(() => {
         let locAux: any[] = [];
-        locAux.push(Number(-57.6232166)); //longitud
-        locAux.push(Number(-32.6998277));
+        locAux.push(Number(-56.1881600)); //longitud
+        locAux.push(Number(-34.9032800));
         setLocations(locAux);
     }, [])
     return (

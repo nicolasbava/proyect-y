@@ -15,38 +15,75 @@ type CoverPageProps = {
 const CoverPageBlue = (props: CoverPageProps) => {
   const router = useRouter();
   return (
-    <section className='mt-20 md:mt-16' id='home'>
-      <div className="absolute z-10 ">
-        <div className="mx-auto ml-7 mt-8 sm:mt-36  md:pl-10 md:mt-52 lg:ml-12 lg:mt-64 lg:pl-28 lg:pt-8 w-3/5" >
-          <div className="self-start lg:flex flex-col">
+    // <section  id='home' className=''>
+    <>
+        {/* img de fondo */}
+        <div 
+          className='mt-20 flex flex-col items-baseline justify-end special lg:h-screen lg:mt-16'
+          style={{backgroundImage:`url(${router.basePath + props.coverPageUrl})`, minHeight:'40vh', backgroundSize:'cover', backgroundPosition: 'center center' 
+          }}
+        > 
+
+          {/* cartel alberga texto  */}
+          <div className='text-center mx-auto px-2 sm:px-0 mb-4 h-full sm:text-left sm:ml-10 md:ml-20 lg:mt-96 '
+                // style={{marginTop: '7rem', paddingBottom: '1rem'}}
+          >
+            {/* NAME - H1 . ADD COLOR FROM PROP */}
             <h1
-              className="mb-3 hidden sm:block text-3xl tracking-base font-bold leading-none uppercase title-font md:text-3xl lg:text-5xl"
+              className="mb-3 text-3xl tracking-base font-bold leading-none uppercase title-font md:text-3xl lg:text-5xl"
               style={{ color: props.colorName }}
               >
-              {/* NAME - H1 . ADD COLOR FROM PROP */}
               {props.name}
             </h1>
-          </div>
-          <div className="w-1/2 lg:w-3/4 flex flex-col items-start">
-            <div className="self-start lg:flex flex-col">
-              <p
-                className="hidden sm:block leading-none tracking-base text-base md:text-xl uppercase"
+            {/* DESCRIPTION. ADD COLOR FROM PROP */}
+            <p
+                className="leading-none mx-auto tracking-base text-base md:text-xl uppercase"
                 style={{ color: props.colorDescription }}
               >
-              {/* DESCRIPTION. ADD COLOR FROM PROP */}
               {props.description}
               </p>
-            </div>
           </div>
+          
+        </div>
+    
+        </>
+    // </section>
+  );
+}
+export { CoverPageBlue };
+
+/*
+
+
+<div className="absolute z-10 w-full" >
+        <div className="mx-auto w-3/5 mt-12 sm:mt-44 sm:ml-8 md:pl-16 md:mt-52 lg:ml-12 lg:mt-64 lg:pl-28 lg:pt-8 " 
+              
+        >
+          <div className="text-center sm:text-left items-end lg:flex flex-col">
+            <h1
+              className="mb-3 text-3xl tracking-base font-bold leading-none uppercase title-font md:text-3xl lg:text-5xl"
+              style={{ color: props.colorName }}
+              >
+              {props.name}
+            </h1>
+            <p
+                className="leading-none mx-auto tracking-base text-base md:text-xl uppercase"
+                style={{ color: props.colorDescription }}
+              >
+              {props.description}
+              </p>
+          </div>
+          
         </div>
       </div>
       <img
         src={`${router.basePath + props.coverPageUrl}`}
         alt="CoverPage/png"
-        style={{}}
-        className="relative  z-0 object-cover object-center"
+        style={{minHeight: '17rem'}}
+        className="relative z-0 object-cover object-center"
       />
-    </section>
-  );
-}
-export { CoverPageBlue };
+
+
+
+
+*/

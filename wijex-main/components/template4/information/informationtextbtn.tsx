@@ -28,7 +28,7 @@ const InformationProfileTextBtn = (props: InformationProps) => {
     return (
         <section id='informationprofile'>
             <div className='lg:flex lg:flex-row mb-20'>
-                <div className='lg:w-1/2 bg-background mt-10 flex flex-col justify-center'>
+                <div className='lg:w-1/2 bg-background lg:mt-10 flex flex-col justify-center'>
                     <div className="">
                         <img
                             src={`${router.basePath + props.imgInformation}`}
@@ -44,7 +44,7 @@ const InformationProfileTextBtn = (props: InformationProps) => {
                                 {props.information}
                             </p>
                         </div>
-                        <div className="pt-6 px-10">
+                        <div className="pt-12 flex justify-center items-center sm:px-10">
                             <button onClick={() => onResumeClick()}
                                 className="w-auto px-4 py-4 leading-5 transition-colors duration-200 transform bg-t5secondary rounded-md hover:bg-t5secondary focus:outline-none focus:bg-t5secondary  shadow-lg"
                                 style={{ color: 'white' }}
@@ -58,8 +58,8 @@ const InformationProfileTextBtn = (props: InformationProps) => {
                     <div className="flex flex-col ">
                         <div className="px-10">
                             <div className="mt-2">
-                                <div className="flex flex-row ">
-                                    <div className="grid grid-flow-col gap-2 mt-10 lg:pr-32 w-auto">
+                                <div className="flex flex-row justify-center items-center">
+                                    <div className="grid grid-flow-col gap-2 md:gap-10 mt-10 w-auto">
                                         {
                                             props.facebook !== '' &&
                                             <a href={props.facebook} target="_blank" rel="noopener noreferrer">

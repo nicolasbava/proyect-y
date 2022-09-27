@@ -37,7 +37,7 @@ export default function HeaderNavVertical(props: Props) {
     }, []);
     return (
         <div >
-            <div className="rounded-r lg:hidden flex justify-between w-full p-6 items-center bg-t5primary  mb-1 h-auto">
+            <div className="fixed z-50 rounded-r lg:hidden flex justify-between w-full  lg:w-1/4 p-6 items-center bg-t5primary  mb-1 h-auto">
                 <div className="flex justify-between  items-center space-x-3">
                     <Link href={'https://www.wijex.com'}>
                         <img src="/logo-wijex-blue.png"
@@ -62,8 +62,13 @@ export default function HeaderNavVertical(props: Props) {
                     </button>
                 </div>
             </div>
-            <div id="Main" className={`${show ? '' : '-translate-x-full'} transform lg:translate-x-0 ease-in-out transition duration-500 flex justify-start items-start h-full  w-full base:w-64 flex-col`}>
-                <div className="hidden xl:flex justify-start p-6 items-center space-x-3">
+            <div id="Main" 
+                className={`${show ? '' : '-translate-x-full'} transform lg:translate-x-0 ease-in-out transition duration-500 flex justify-start items-start h-full w-full lg:w-auto base:w-64 flex-col`}
+                style={{position: 'fixed', top: '68px', height: '314px', background: 'white'}}    
+            >
+
+                
+                <div className=" xl:flex justify-start p-6 lg:p-3 items-center space-x-3">
                     <Link href={'https://www.wijex.com'}>
                         <img src="/logo-wijex-blue.png"
                             width={93.75} height={43.5}
@@ -74,7 +79,7 @@ export default function HeaderNavVertical(props: Props) {
                 <div className={`${!show ? 'hidden' : ''} mt-8 flex flex-col space-x-3 lg:block lg:-translate-x-full`}>
                     <div className="mb-4 lg:mb-12 pl-3">
                         <a
-                            href={`${router.basePath}`}
+                            href={`${router.basePath}#home`}
                             className="text-base font-bold leading-none tracking-tighter text-t5fourth title-font uppercase mx-3 cursor-pointer hover:text-third">
                             INICIO
                         </a>

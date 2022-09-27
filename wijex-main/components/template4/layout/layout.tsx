@@ -33,7 +33,7 @@ export default function Layout(props: Props) {
           />
         </div>
         <div className="lg:flex lg:flex-col w-full">
-          <main className="flex-1">
+          <main className="flex-1 lg:ml-32">
             {props.children}
           </main>
         </div>

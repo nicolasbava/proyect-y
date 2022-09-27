@@ -7,7 +7,7 @@ const PERSONAL_DATA = {
 }
 
 const IMAGE_DATA = {
-    BANNER: '/profile/algo-nuestro-tallado/ALGO-NUESTRO-TALLADO_PORTADA.png',
+    BANNER: '/profile/algo-nuestro-tallado/ALGO-NUESTRO-TALLADO_PORTADA2.png',
     INFORMATION: '/profile/algo-nuestro-tallado/ALGO-NUESTRO-TALLADO_PERFIL3.png',
     AVATAR: '/profile/algo-nuestro-tallado/ALGO-NUESTRO-TALLADO_PERFIL2.png',
     GALLERY_1: '/profile/algo-nuestro-tallado/ALGO-NUESTRO-TALLADO_GALERIA_04.png',
@@ -21,8 +21,8 @@ const CONTACT_DATA = {
     PHONE: '59897995777',
     ADDRESS: '12 de octubre ',
     NUMBER: '2041',
-    LOCALITY: 'Young',
-    PROVINCE: 'Río Negro',
+    LOCALITY: 'Montevideo',
+    PROVINCE: 'Montevideo',
     COUNTRY: 'Uruguay'    
 }
 
