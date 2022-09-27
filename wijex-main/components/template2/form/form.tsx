@@ -86,7 +86,7 @@ const FormContact = (props: FormContactProps) => {
                 style={{ backgroundImage: `url(${router.basePath + props.background})` }}
                 className='bg-cover bg-center bg-no-repeat'
             >
-                <div className="bg-t2primary bg-opacity-50 text-center sm:text-left">
+                <div className="bg-t2primary pb-12 pt-12 bg-opacity-50 text-center sm:text-left">
                     <div className='lg:flex lg:flex-row'>
                         <div className='lg:w-1/2'>
                             <div className="sm:flex sm:flex-row pt-10 mx-0 justify-center md:mb-8">

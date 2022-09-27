@@ -17,7 +17,7 @@ const IMAGE_DATA = {
     AVATAR: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_PERFIL2.png',
     GALLERY_1: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_GALERIA-05.png',
     GALLERY_2: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_GALERIA-06.png',
-    GALLERY_3: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_PERFIL3.png',
+    GALLERY_3: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_GALERIA-04.png',
     BACKGROUND: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_GALERIA-04.png'
 }
 

@@ -68,7 +68,7 @@ export default function HeaderNavVertical(props: Props) {
             >
 
                 
-                <div className=" xl:flex justify-start p-6 lg:p-3 items-center space-x-3">
+                <div className="hidden lg:flex justify-start ml-3 p-6 lg:p-3 items-center space-x-3">
                     <Link href={'https://www.wijex.com'}>
                         <img src="/logo-wijex-blue.png"
                             width={93.75} height={43.5}

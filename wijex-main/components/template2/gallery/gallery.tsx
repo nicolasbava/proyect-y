@@ -35,7 +35,7 @@ const Gallery = (props: GalleryProps) => {
                         className="rounded shadow-md"
                     />
                 </div>
-                <div className="md:w-1/4 h-auto px-4">
+                <div className="md:w-1/4 px-4">
                     <div className="mb-8 mt-8 md:mt-0 cursor-pointer" onClick={() => onOpenModal(1)}>
                         <img
                             src={`${router.basePath + props.gallery_2}`}
@@ -46,6 +46,7 @@ const Gallery = (props: GalleryProps) => {
                         />
                     </div>
                     <div className="cursor-pointer" onClick={() => onOpenModal(2)}>
+                        
                         <img
                             src={`${router.basePath + props.gallery_3}`}
                             width={450}

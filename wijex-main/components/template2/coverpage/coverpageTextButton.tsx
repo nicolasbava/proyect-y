@@ -94,7 +94,7 @@ const CoverPageTextButton = (props: CoverPageProps) => {
                         </div>
                     }
                   </div>
-                  <div className="pt-5 px-3">
+                  <div className="pt-5 px-1 sm:px-3">
                     <button onClick={() => onResumeClick()}
                       className="px-8 py-3 pt-4 leading-5 transition-colors duration-200 transform bg-t2fourth rounded-md hover:bg-t2fourth  focus:outline-none focus:bg-t2fourth shadow-lg"
                       style={{ color: 'white' }}
