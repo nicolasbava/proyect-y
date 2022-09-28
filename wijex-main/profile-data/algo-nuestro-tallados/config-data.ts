@@ -1,5 +1,5 @@
 const PERSONAL_DATA = {
-    NAME: 'ALGO NUESTRO TALLADO',
+    NAME: 'ALGO NUESTRO TALLADOS',
     COLORNAME:'#365925',
     DESCRIPTION: 'Tallamos el nombre de tus sueños ',
     COLORDESCRIPTION: '#bda262',
@@ -7,13 +7,13 @@ const PERSONAL_DATA = {
 }
 
 const IMAGE_DATA = {
-    BANNER: '/profile/algo-nuestro-tallado/ALGO-NUESTRO-TALLADO_PORTADA2.png',
-    INFORMATION: '/profile/algo-nuestro-tallado/ALGO-NUESTRO-TALLADO_PERFIL3.png',
-    AVATAR: '/profile/algo-nuestro-tallado/ALGO-NUESTRO-TALLADO_PERFIL2.png',
-    GALLERY_1: '/profile/algo-nuestro-tallado/ALGO-NUESTRO-TALLADO_GALERIA_04.png',
-    GALLERY_2: '/profile/algo-nuestro-tallado/ALGO-NUESTRO-TALLADO_GALERIA_05.png',
-    GALLERY_3: '/profile/algo-nuestro-tallado/ALGO-NUESTRO-TALLADO_GALERIA_06.png',
-    BACKGROUND: '/profile/algo-nuestro-tallado/ALGO-NUESTRO-TALLADO_BACKGROUND_07.png'
+    BANNER: '/profile/algo-nuestro-tallados/ALGO-NUESTRO-TALLADO_PORTADA2.png',
+    INFORMATION: '/profile/algo-nuestro-tallados/ALGO-NUESTRO-TALLADO_PERFIL3.png',
+    AVATAR: '/profile/algo-nuestro-tallados/ALGO-NUESTRO-TALLADO_PERFIL2.png',
+    GALLERY_1: '/profile/algo-nuestro-tallados/ALGO-NUESTRO-TALLADO_GALERIA_04.png',
+    GALLERY_2: '/profile/algo-nuestro-tallados/ALGO-NUESTRO-TALLADO_GALERIA_05.png',
+    GALLERY_3: '/profile/algo-nuestro-tallados/ALGO-NUESTRO-TALLADO_GALERIA_06.png',
+    BACKGROUND: '/profile/algo-nuestro-tallados/ALGO-NUESTRO-TALLADO_BACKGROUND_07.png'
 }
 
 const CONTACT_DATA = {

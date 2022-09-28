@@ -81,7 +81,7 @@ const FormContact = (props: FormContactProps) => {
                             className="block w-full px-4 py-2 mt-2 text-t1labelcolor bg-t1inputcolor border border-t1inputcolor rounded-md dark:bg-t1inputcolor dark:text-t1primary dark:border-t1inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
                     </div>
                     <div>
-                        <label htmlFor="userName" className="pl-4 text-t1labelcolor dark:text-t1secondary">Nombre</label>
+                        <label htmlFor="userName" className="sm:pl-4 text-t1labelcolor dark:text-t1secondary">Nombre</label>
                         <input
                             id="username"
                             name='userName'
@@ -91,7 +91,7 @@ const FormContact = (props: FormContactProps) => {
                             className="block w-full  px-4 py-2 mt-2 text-t1primary bg-t1inputcolor border border-t1inputcolor rounded-md dark:bg-t1inputcolor dark:text-t1primary dark:border-t1inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
                     </div>
                     <div>
-                        <label className="pl-4 text-t1labelcolor dark:text-t1secondary">Asunto</label>
+                        <label className="sm:pl-4 text-t1labelcolor dark:text-t1secondary">Asunto</label>
                         <input
                             id="subject"
                             name="subject"
@@ -101,7 +101,7 @@ const FormContact = (props: FormContactProps) => {
                             className="block w-full px-4 py-2 mt-2 text-t1labelcolor bg-t1inputcolor border border-t1inputcolor rounded-md dark:bg-t1inputcolor dark:text-t1primary dark:border-t1inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
                     </div>
                     <div>
-                        <label className="pl-4 text-t1labelcolor dark:text-t1secondary" >E-mail</label>
+                        <label className="sm:pl-4 text-t1labelcolor dark:text-t1secondary" >E-mail</label>
                         <input
                             id="userEmail"
                             name="userEmail"
@@ -111,7 +111,7 @@ const FormContact = (props: FormContactProps) => {
                             className="block w-full px-4 py-2 mt-2 text-t1labelcolor bg-t1inputcolor border border-t1inputcolor rounded-md dark:bg-t1inputcolor dark:text-t1primary dark:border-t1inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
                     </div>
                     <div>
-                        <label className="pl-4 text-t1labelcolor dark:text-t1secondary">Teléfono</label>
+                        <label className="sm:pl-4 text-t1labelcolor dark:text-t1secondary">Teléfono</label>
                         <input
                             id="userPhone"
                             name="userPhone"
@@ -123,7 +123,7 @@ const FormContact = (props: FormContactProps) => {
                 </div>
                 <div className="grid grid-cols-1 gap-8 mt-4">
                     <div className="relative mb-4">
-                        <label className="pl-4 text-t1labelcolor dark:text-t1secondary">Dejá tu consulta</label>
+                        <label className="sm:pl-4 text-t1labelcolor dark:text-t1secondary">Dejá tu consulta</label>
                         <textarea
                             id="userMessage"
                             name="userMessage"

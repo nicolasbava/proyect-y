@@ -27,7 +27,7 @@ const InformationProfileTextBtn = (props: InformationProps) => {
 
     return (
         <section id='informationprofile'>
-            <div className='lg:flex lg:flex-row mb-20'>
+            <div className='lg:flex lg:flex-row-reverse mb-20'>
                 <div className='lg:w-1/2 bg-background lg:mt-10 flex flex-col justify-center'>
                     <div className="">
                         <img
@@ -40,7 +40,7 @@ const InformationProfileTextBtn = (props: InformationProps) => {
                 <div className='lg:w-1/2 flex flex-col justify-between lg:pt-12'>
                     <div>
                         <div className="sm:max-w-6xl xl:max-w-3xl z-10">
-                            <p className="text-justify text-t5text title-font font-bold lg:text-xl px-10 pt-12 lg-pt-0">
+                            <p className=" text-t5text title-font font-bold lg:text-xl px-10 pt-12 lg-pt-0">
                                 {props.information}
                             </p>
                         </div>

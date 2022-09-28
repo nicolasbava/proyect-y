@@ -100,7 +100,7 @@ export default function HeaderNav(props:Props) {
                                     COMPARTIR
                                 </text>
                             </div>
-                            <div className='lg:pl-4 py-1'>
+                            <div className='lg:pl-4 py-1 lg:hidden'>
                                 <button className='hover:bg-third px-2 rounded-md'
                                     onClick={() => {
                                         var file = new Blob(

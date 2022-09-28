@@ -49,7 +49,7 @@ const InformationProfile = (props: BannerProps) => {
                             {/* <h3 className='text-darkgray sm:hidden title-font uppercase font-bold mb-4' >{props.description2}</h3> */}
                             
                             {/* HISTORY, BAD CALLED DESCRIPTION */}
-                            <p className="text-justify text-darkgray title-font font-bold">
+                            <p className=" text-darkgray title-font font-bold">
                                 {props.description}
                             </p>
                             

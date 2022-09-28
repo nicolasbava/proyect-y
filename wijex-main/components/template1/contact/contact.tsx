@@ -89,7 +89,7 @@ const ContactProfile = (props: ContactProps) => {
                                                 className="rounded-full mb-5 sm:mb-0"
                                             />
                                         </div>
-                                        <h3 className="text-darkgray  title-font text-base lg:text-base sm:ml-2 mt-1">
+                                        <h3 className="text-darkgray  mb-5 sm:mb-0 title-font text-base lg:text-lg sm:ml-2 mt-1">
                                             {props.email}
                                         </h3>
                                     </div>
@@ -124,7 +124,7 @@ const ContactProfile = (props: ContactProps) => {
                                                 alt="logo-linkedin"
                                             />
                                         </div>
-                                        <h3 className="text-darkgray mb-5 sm:mb-0 title-font text-base lg:text-lg sm:ml-2 mt-1">
+                                        <h3 className="text-darkgray  mb-5 sm:mb-0 title-font text-base lg:text-lg sm:ml-2 mt-1">
                                             {props.phone}
                                         </h3>
                                     </div>

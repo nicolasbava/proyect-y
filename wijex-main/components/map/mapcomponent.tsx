@@ -6,8 +6,10 @@ import Image from "next/image";
 export default function MapComponent({ locations }: any) {
     const router = useRouter();
     const [viewport, setViewport] = useState({
-        width: "100%",
-        height: "100%",
+        // width: "100%",
+        // height: "100%",
+        width: "98vw",
+        height: "40vh",
         // The latitude and longitude of the center of London
         latitude: locations[1],
         longitude: locations[0],
@@ -23,7 +25,7 @@ export default function MapComponent({ locations }: any) {
             <Marker
                 latitude={locations[1]}
                 longitude={locations[0]}
-                offsetLeft={-20}
+                offsetLeft={0}
                 offsetTop={-10}>
                 <img
                     src={`${router.basePath}/assert/icons/direccion.svg`}

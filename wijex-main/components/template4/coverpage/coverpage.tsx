@@ -23,8 +23,8 @@ const CoverPage = (props: CoverPageProps) => {
         style={{ backgroundImage: `url(${router.basePath + props.background})` }}
         className='bg-cover h-screen bg-center bg-no-repeat bg-t5secondary bg-opacity-0 '
       >
-          <div className="flex flex-col-reverse items-center justify-center sm:flex-row h-full w-full sm:pt-10">
-            <div className='flex flex-col lg:pl-10 lg:w-3/2 pl-4 bg-t5socket py-10 pr-10'>
+          <div className="flex flex-col items-center justify-center sm:flex-row h-full w-full sm:pt-10">
+            <div className='flex flex-col w-full pl-8 text-center sm:text-left lg:pl-10 lg:w-3/2 bg-t5socket py-10 pr-10'>
               <h1
                 className="uppercase title-font text-2xl mb-2 sm:text-5xl lg:text-7xl" //text-2xl (font-size)
                 style={{ color: props.colorName, fontWeight: 900 }}

@@ -3,8 +3,8 @@ import Link from 'next/link';
 export default function FooterNav() {
     return (
         <footer className="bg-t1secondary">
-            <div className="container mx-auto px-6 md:px-12 py-4">
-                <div className="flex flex-row justify-between item-center">
+            <div className="container mx-auto px-6 md:px-12 py-6">
+                <div className="flex flex-row justify-between item-center pt-2">
                     <Link href={'https://www.wijex.com'}>
                         <img
                             src="/logo-wijex.png"
@@ -12,7 +12,7 @@ export default function FooterNav() {
                             alt="logo-wijex.png"
                         />
                     </Link>
-                    <div className="flex flex-row justify-between item-center hidden md:flex pt-5">
+                    <div className="flex flex-row justify-between items-center hidden md:flex">
                         <p className="text-whitecolor text-xs md:text-base">Creado por <Link href={'https://www.wijex.com'}>Wijex</Link> ©2021 Todos los derechos reservados</p>
                     </div>
                     <div className="flex flex-col justify-center item-center md:hidden">

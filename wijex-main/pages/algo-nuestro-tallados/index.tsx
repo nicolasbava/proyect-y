@@ -10,8 +10,8 @@ import { PlinthTitle } from '../../components/template4/plinthtitle/plinthtitle'
 import { InformationProfileTextBtn } from '../../components/template4/information/informationtextbtn';
 
 // import data
-import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/algo-nuestro-tallado/config-data';
-import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/algo-nuestro-tallado/config-data';
+import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/algo-nuestro-tallados/config-data';
+import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/algo-nuestro-tallados/config-data';
 
 
 const Home: NextPage = () => {
