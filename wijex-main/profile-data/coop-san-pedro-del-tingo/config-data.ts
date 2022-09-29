@@ -34,7 +34,7 @@ const SOCIALNET_DATA = {
     FACEBOOK: 'https://www.facebook.com/coop.sanpedrodeltingo.7',
     INSTAGRAM: '',
     TIKTOK: '',
-    WIJEX: '',
+    WIJEX: 'https://comunidad.wijex.com/SanPedrodelTingo',
     TELEGRAM: '@SanPedrodelTingo',
 }
 

@@ -16,17 +16,18 @@
 }
 
 .coverPageImage {
-    height:90vh ;
+    height: 50vh ;
     width: auto;
     position: relative;
     right: 0;
-    
 }
 
 
 
 @media (min-width: 1024px) {
-    
+    .coverPageImage {
+        height: 90vh
+    }
 
     /* layout archive */
     .customLayout {

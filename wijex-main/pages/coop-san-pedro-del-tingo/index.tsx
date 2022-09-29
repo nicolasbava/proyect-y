@@ -71,11 +71,13 @@ const ProfilePage: NextPage = () => {
 
       <Plinth />
 
-      <InformationProfileBlue
+      <InformationProfile
         name = {PERSONAL_DATA.NAME}
         description = {PERSONAL_DATA.HISTORY}
         pdf={CURRICULUM_DATA.CURRICULUM_VITAE}
         imgInformation={IMAGE_DATA.INFORMATION}
+        btnName={'Ver servicio'}
+
       />
 
       <Plinth />

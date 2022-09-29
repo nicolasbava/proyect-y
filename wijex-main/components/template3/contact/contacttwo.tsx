@@ -94,7 +94,7 @@ const ContactProfileTwo = (props: ContactProps) => {
             {/* CONTACT PROFILE TWO  */}
             <div className="pr-0 lg:pr-16 lg:flex lg:flex-row-reverse lg:items-center bg-t4background">
                 {/* CONTAINER TEXT PART - P BUTTON ICONS */}
-                <div className="pr-0 lg:pl-20 py-20 justify-start items-center">
+                <div className=" px-10  lg:pl-20 py-20 justify-start items-center md:mx-auto md:w-2/3">
                     <div className=' flex flex-col justify-center item-center'>
                         <div className="sm:max-w-6xl ">
                             {/* HISTORY INFORMATION */}
@@ -104,7 +104,7 @@ const ContactProfileTwo = (props: ContactProps) => {
                         </div>
                     </div>
                     {/* CONTACT */}
-                    <div className='mr-6 flex flex-col justify-center lg:pb-20 lg:w-1/2 '>
+                    <div className=' flex flex-col justify-center lg:pb-20 '>
                         <div className="pt-8 ">
                             <button onClick={() => onResumeClick()}
                                 className="w-full px-8 py-8 leading-5 transition-colors duration-200 transform bg-t4secondary rounded-md hover:bg-t4secondary focus:outline-none focus:bg-t4secondary  shadow-lg">
@@ -115,7 +115,7 @@ const ContactProfileTwo = (props: ContactProps) => {
                         </div>
 
                         {/* CONTACT ICONS */}
-                        <div className="px-6 pt-4 mx-auto">
+                        <div className=" pt-4 mx-auto">
                             
                                 <div className="grid grid-cols-4 gap-4 mt-4">
                                     <a href={`tel:${props.phone}`} target="_blank" rel="noopener noreferrer">
@@ -170,7 +170,7 @@ const ContactProfileTwo = (props: ContactProps) => {
 
                 </div>
                 {/* IMAGE CONTAINER */}
-                <div className='mt-0 pb-10 w-1/2 lg:w-full '>
+                <div className='mt-0 pb-10  lg:w-full '>
                     <img
                         src={`${router.basePath + props.imgInformation}`}
                         alt="CoverPage/png"

@@ -52,7 +52,7 @@ const ProfilePage: NextPage = () => {
           // description2={PERSONAL_DATA.DESCRIPTION}
           pdf={CURRICULUM_DATA.CURRICULUM_VITAE}
           imgInformation={IMAGE_DATA.INFORMATION}
-          btnName={'PERFIL PERSONAL'}
+          btnName={'Perfil Personal'}
         />
         <PlinthTitle
           title={'Galería'}

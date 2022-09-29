@@ -1,5 +1,5 @@
 const PERSONAL_DATA = {
-    NAME: 'LISSO',
+    NAME: 'LISSO LTDA.',
     COLORNAME: '#000000',
     DESCRIPTION: 'Maria Cecilia Rivera C.',
     COLORDESCRIPTION: '#0c8837',
@@ -7,13 +7,13 @@ const PERSONAL_DATA = {
 }
 
 const IMAGE_DATA = {
-    BANNER: '/profile/lisso/LISSO-GALERIA-06.png', 
-    INFORMATION: '/profile/lisso/LISSO_PORTADA.png',
-    AVATAR: '/profile/lisso/LISSO_PERFIL2.png',
-    GALLERY_1: '/profile/lisso/LISSO_GALERIA-04.png',
-    GALLERY_2: '/profile/lisso/LISSO-GALERIA-05.png',
-    GALLERY_3: '/profile/lisso/LISSO-GALERIA-06.png',
-    BACKGROUND: '/profile/lisso/LISSO-GALERIA-05.png'
+    BANNER: '/profile/lisso-maria-cecilia/LISSO-GALERIA-06.png', 
+    INFORMATION: '/profile/lisso-maria-cecilia/LISSO_PORTADA.png',
+    AVATAR: '/profile/lisso-maria-cecilia/LISSO_PERFIL2.png',
+    GALLERY_1: '/profile/lisso-maria-cecilia/LISSO_GALERIA-04.png',
+    GALLERY_2: '/profile/lisso-maria-cecilia/LISSO-GALERIA-05.png',
+    GALLERY_3: '/profile/lisso-maria-cecilia/LISSO-GALERIA-06.png',
+    BACKGROUND: '/profile/lisso-maria-cecilia/LISSO-GALERIA-05.png'
 }
 
 const CONTACT_DATA = {
@@ -38,7 +38,7 @@ const SOCIALNET_DATA = {
 }
 
 const CURRICULUM_DATA = {
-    CURRICULUM_VITAE: '/profile/lisso/LISSO.pdf'
+    CURRICULUM_VITAE: '/profile/lisso-maria-cecilia/LISSO.pdf'
 }
 
 const NONE_DATA = {

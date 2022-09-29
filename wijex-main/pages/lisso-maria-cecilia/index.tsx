@@ -2,8 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import type { NextPage } from 'next';
 //import Layout from '../components/layout/layout';
-import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/lisso/config-data';
-import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/lisso/config-data';
 
 import Layout from '../../components/template3/layout/layout';
 import { CoverPageTwo } from '../../components/template3/coverpage/coverpagetwo';
@@ -12,6 +10,10 @@ import { ContactProfileTwo } from '../../components/template3/contact/contacttwo
 import { PlinthTitle } from '../../components/template3/plinthtitle/plinthtitle';
 import { Gallery } from '../../components/template3/gallery/gallery';
 import FormContact from '../../components/template3/form/form';
+
+// import data
+import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/lisso-maria-cecilia/config-data';
+import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/lisso-maria-cecilia/config-data';
 
 const Home: NextPage = () => {
   return (
