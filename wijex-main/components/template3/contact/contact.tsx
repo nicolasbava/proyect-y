@@ -91,6 +91,7 @@ const ContactProfile = (props: ContactProps) => {
 
     return (
         <section>
+            {/*  CONTACT */}
             <div className='lg:flex lg:flex-row '>                
                 <div className='lg:w-2/3 bg-t4background mt-10 lg:mb-32 flex flex-col justify-center'>
                     <div className="p-10 sm:max-w-6xl xl:max-w-3xl item-end content-end justify-end">

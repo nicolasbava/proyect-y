@@ -27,7 +27,7 @@ export default function HeaderNav(props: Props) {
         console.log("window.innerHeight", window.innerHeight);
     }, []);
     return (
-        <header className="bg-t2primary shadow-md">
+        <header className="bg-t2primary shadow-md fixed w-full z-50">
             <nav className="container mx-auto px-6 md:px-12 py-4 ">
                 <div className="md:flex justify-between items-center" >
                     <div className="flex justify-between items-center" >
@@ -63,7 +63,7 @@ export default function HeaderNav(props: Props) {
                         <div className='md:inline-flex md:flex-row md:ml-auto md:w-auto w-full md:items-center items-start  flex flex-col md:h-auto'>
                             <div className="lg:pr-10 py-1">
                                 <a
-                                    href={`${router.basePath}`}
+                                    href={`${router.basePath}#home`}
                                     className="text-sm font-semibold tracking-normal leading-none text-t2secondary title-font uppercase mx-3 cursor-pointer hover:text-third">
                                     INICIO
                                 </a>
@@ -115,7 +115,7 @@ export default function HeaderNav(props: Props) {
                                         );
                                     }}
                                 >
-                                    <div className='flex flex-row items-center'>
+                                    <div className='flex lg:hidden flex-row items-center'>
                                         <img
 
                                             src={`${router.basePath}/assert/icons/download-t2.png`}

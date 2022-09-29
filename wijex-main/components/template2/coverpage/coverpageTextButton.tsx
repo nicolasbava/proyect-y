@@ -39,8 +39,8 @@ const CoverPageTextButton = (props: CoverPageProps) => {
         <div className="grid grid-cols-2 gap-4">
           <div className='h-full lg:pb-36 xl:pb-44'>
             <div className="absolute w-2/3 z-10 left-0 mt-10 lg:mt-32">
-              <div className='flex flex-col ' >
-                <div className='pl-5 sm:pl-10 lg:pl-20 bg-t2thirdy py-4 lg:py-6 xl:py-8'>
+
+                <div className='pl-5 mt-38 sm:mt-20 sm:pl-10 lg:pl-20 bg-t2thirdy py-4 lg:py-6 xl:py-8'>
                   <h1
                     className="font-bold uppercase title-font text-2xl lg:text-5xl xl:text-7xl"
                     style={{ color: props.colorName }}
@@ -54,7 +54,7 @@ const CoverPageTextButton = (props: CoverPageProps) => {
                     {props.description}
                   </p>
                 </div>
-              </div>
+          
             </div>
             <div className='relative flex flex-col h-full justify-end lg:mt-36 xl:mt-44'>
               <div className='lg:w-2/3 self-center '>

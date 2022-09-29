@@ -66,6 +66,8 @@ export default function HeaderNav(props: Props) {
                         className={`${active ? 'hidden' : ''}   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
                     >
                         <div className='md:inline-flex md:flex-row md:ml-auto md:w-auto w-full md:items-center items-start  flex flex-col md:h-auto'>
+                            
+                            
                             <div className="lg:pr-10">
                                 <a
                                     href={`${router.basePath}`}
@@ -126,7 +128,7 @@ export default function HeaderNav(props: Props) {
                                             width={16}
                                             alt="logo-linkedin"
                                         />
-                                        <div className='flex flex-col ml-2'>
+                                        <div className='md:hidden flex flex-col ml-2'>
                                             <text
                                                 className="text-sm font-semibold leading-none title-font  text-t2thirdy  text-left"
                                             >

@@ -43,7 +43,7 @@ export default function HeaderNavVertical(props: Props) {
     return (
         <div >
             {/* MOBILE NAV BAR - fixed */}
-            <div className="fixed z-50 rounded-r lg:hidden flex justify-between w-full p-6 items-center bg-t4primary mb-1 h-auto">
+            <div className={`fixed z-50 rounded-r lg:hidden flex justify-between w-full p-6 items-center bg-t4primary mb-1 h-auto ${styles.shadowHeader} `}>
                 <div className="flex justify-between  items-center space-x-3">
                     <Link href={'https://www.wijex.com'}>
                         <img src="/logo-wijex-blue.png"
@@ -68,8 +68,11 @@ export default function HeaderNavVertical(props: Props) {
                     </button>
                 </div>
             </div>
+
+            {/* == NAV HEADER == */}
             {/* styled from template3.module.css */}
-            <div id="Main" className={`${show ? '' : '-translate-x-full'} transform lg:translate-x-0 ease-in-out transition duration-500 flex justify-start items-start h-full w-full base:w-64 flex-col ${styles.customHeader}`}>
+
+            <div id="Main" className={`${show ? '' : '-translate-x-full'} rounded-tr-xl  absolute top-24 lg:top-0 lg:rounded-none content-start transform lg:translate-x-0 ease-in-out transition duration-500 flex justify-start items-start  w-full h-full base:w-64 flex-col ${styles.customHeader}`}>
                 <div className="hidden xl:flex justify-start p-6 items-center space-x-3">
                     <Link href={'https://www.wijex.com'}>
                         <img src="/logo-wijex-blue.png"
@@ -79,21 +82,21 @@ export default function HeaderNavVertical(props: Props) {
                     </Link>
                 </div>
                 <div className={`${!show ? 'hidden' : ''} mt-8 flex flex-col space-x-3 lg:block lg:-translate-x-full`}>
-                    <div className="mb-4 lg:mb-20 pl-3">
+                    <div className="mb-8 lg:mb-16 pl-3">
                         <a
                             href={`${router.basePath}#home`}
                             className="text-base  font-semibold leading-none tracking-tighter text-t4fourth title-font uppercase mx-3 cursor-pointer hover:text-third">
                             INICIO
                         </a>
                     </div>
-                    <div className="mb-4 lg:mb-20">
+                    <div className="mb-8 lg:mb-16">
                         <a
                             href={`${router.basePath}#informationprofile`}
                             className="text-base  font-semibold leading-none tracking-tighter text-t4fourth title-font uppercase mx-3 cursor-pointer hover:text-third">
                             SOBRE MÍ
                         </a>
                     </div>
-                    <div className="mb-4 lg:mb-20">
+                    <div className="mb-8 lg:mb-16">
                         <a
                             href={`${router.basePath}#galleryprofile`}
                             className="text-base  font-semibold leading-none tracking-tighter text-t4fourth title-font uppercase mx-3 cursor-pointer hover:text-third"
@@ -101,7 +104,7 @@ export default function HeaderNavVertical(props: Props) {
                             Galería
                         </a>
                     </div>
-                    <div className="mb-4 lg:mb-20">
+                    <div className="mb-8 lg:mb-16">
                         <a
                             href={`${router.basePath}#contactprofile`}
                             className="text-base  font-semibold leading-none tracking-tighter text-t4fourth title-font uppercase mx-3 cursor-pointer hover:text-third"
@@ -109,7 +112,7 @@ export default function HeaderNavVertical(props: Props) {
                             CONTACTO
                         </a>
                     </div>
-                    <div className="mb-4 lg:mb-20">
+                    <div className="mb-8 lg:mb-16">
                         <text
                             onClick={() => { setActive(false); setShowModal(true); setShow(false) }}
                             className="text-base  font-semibold leading-none tracking-tighter text-t4fourth title-font uppercase mx-3 cursor-pointer hover:text-third"

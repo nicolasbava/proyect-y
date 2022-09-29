@@ -11,6 +11,7 @@ import { InformationProfile } from '../../components/template1/information/infor
 import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/mauricio-campos-charpentier/config-data'; //CAMBIAR DIRECCION
 import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/mauricio-campos-charpentier/config-data'; //CAMBIAR DIRECCION
 import { CoverPage } from '../../components/template1/coverpage/coverpage';
+import { CoverPageBlue } from '../../components/template1/coverpage/coverpageblue';
 import { Plinth } from '../../components/template1/plinth/plinth';
 
 
@@ -36,7 +37,7 @@ const ProfilePage: NextPage = () => {
         avatar={IMAGE_DATA.AVATAR}
         url={'mauricio-campos-charpentier'}
       >
-        <CoverPage
+        <CoverPageBlue
           name={PERSONAL_DATA.NAME}
           description={PERSONAL_DATA.DESCRIPTION}
           colorName={PERSONAL_DATA.COLORNAME}

@@ -92,6 +92,7 @@ const ContactProfileEdit = (props: ContactProps) => {
 
     return (
         <section id='informationprofile'>
+            {/* CONTACT EDIT */}
             <div className="pr-10 lg:pr-16 mb-12 lg:mb-20">
                 <div className="bg-t4background lg:flex lg:flex-row content-end justify-end item-end">
                     <div className='lg:w-2/4 flex flex-col justify-center item-center'>

@@ -91,11 +91,12 @@ const ContactProfileTwo = (props: ContactProps) => {
 
     return (
         <section id='informationprofile'>
+            {/* CONTACT PROFILE TWO  */}
             <div className="pr-0 lg:pr-16 mb-0 lg:mb-20">
                 <div className="pr-0 bg-t4background lg:flex lg:flex-row content-end justify-center item-end">
                     <div className='lg:w-2/4 flex flex-col justify-center item-center'>
                         <div className="p-10 sm:max-w-6xl xl:max-w-3xl">
-                            <p className="text-justify text-t4primary title-font lg:text-xl">
+                            <p className=" text-t4primary title-font lg:text-xl">
                                 {props.information}
                             </p>
                         </div>

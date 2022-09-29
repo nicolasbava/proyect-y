@@ -29,7 +29,7 @@ export default function Layout(props: Props) {
         avatar={props.avatar}
         url={props.url}
       />
-      <main className="flex-1">
+      <main className="flex-1 mt-20">
         {props.children}
       </main>
       <FooterNav />

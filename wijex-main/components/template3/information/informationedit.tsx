@@ -28,7 +28,7 @@ const InformationProfileEdit = (props: BannerProps) => {
                     <div className="mx-auto pl-10 w-96">
                         <div className="flex-col flex  self-center p-10 sm:max-w-6xl xl:max-w-3xl z-10">
 
-                            <p className="text-justify text-darkgray title-font font-bold">
+                            <p className=" text-darkgray title-font font-bold">
                                 {props.description}
                             </p>
                             <div className="pt-6">

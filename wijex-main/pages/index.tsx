@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       <Head>
         <meta name="viewport" content="initial-scale=1.0 ,width=device-width" />
         <meta key="description" name="description" content="nombre de la app" />
-        <title>WIJEX</title>
+        <title>WIJEX Webcards</title>
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css"
@@ -35,14 +35,16 @@ const Home: NextPage = () => {
         <header>
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
             <div className={LandingCss.headerLeft}>
-              <span className={LandingCss.headerTitle}>
-                WIJEX
-              </span>
+              <a href="https://wijex.com" target='_blank'>
+                <span className={LandingCss.headerTitle}>
+                  WIJEX
+                </span>
+              </a>
             </div>
             <div className={LandingCss.headerRight}>
               <a
                 href="https://clear-incentive-329822.web.app/formulario/" target="_blank" rel="noreferrer" 
-                className={LandingCss.headerLinkB}
+                className={LandingCss.headerLinkG}
               >
                 Formulario
               </a>
@@ -88,7 +90,7 @@ const Home: NextPage = () => {
               </a>
               <a
                 href="https://www.instagram.com/wijexcompany/" target="_blank" rel="noreferrer" 
-                className={LandingCss.headerLinkG}
+                className={LandingCss.headerLinkB}
               >
                 Instagram
               </a>
@@ -129,7 +131,7 @@ const Home: NextPage = () => {
               </span>
               <a
                 href="https://www.instagram.com/wijexcompany/" target="_blank" rel="noreferrer" 
-                className={LandingCss.socialMediaG}
+                className={LandingCss.socialMediaB}
               >
                 Instagram
               </a>
