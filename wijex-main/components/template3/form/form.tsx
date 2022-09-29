@@ -90,7 +90,7 @@ const FormContact = (props: FormContactProps) => {
     return (
         <section id='contactprofile'>
             <div
-                className='filter py-10 bg-t4background lg:mb-20'
+                className='filter py-10 bg-t4background '
             >
                 <div className='lg:flex lg:flex-row'>
                     <div className='lg:w-1/2 '>
@@ -211,9 +211,10 @@ const FormContact = (props: FormContactProps) => {
                             </div>
                         </div>
                     </div>
-                    <div className='lg:w-1/2 lg:pt-20'>
+                    <div className='lg:w-1/2 '>
                         <div className="lg:container px-10 py-6 mx-auto text-center sm:text-left">
                             <div>
+                                
                                 <form onSubmit={sendEmail} className='z-20 opacity-100'>
                                     <div className="grid grid-cols-1 gap-8 mt-4 sm:grid-cols-2 md:grid-cols-2">
                                         <div hidden>
@@ -296,7 +297,7 @@ const FormContact = (props: FormContactProps) => {
                                                 className="block w-full px-4 py-2 mt-2 text-primary bg-t4inputcolor border border-t4inputcolor rounded-md dark:bg-t4inputcolor dark:text-primary dark:border-t4inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring duration-200 ease-in-out"></textarea>
                                         </div>
                                     </div>
-                                    <div className="flex justify-center lg:justify-end mt-6">
+                                    <div className="flex justify-center lg:justify-start mt-6">
                                         <button
                                             type='submit'
                                             className="px-12 py-5 pt-6 leading-5 transition-colors duration-200 transform bg-t4btncolor rounded-md hover:bg-t4btncolor focus:outline-none focus:bg-t4btncolor shadow-lg" style={{ color: 'white' }}>

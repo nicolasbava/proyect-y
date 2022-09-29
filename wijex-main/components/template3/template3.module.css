@@ -15,6 +15,14 @@
     box-shadow: 1px -1px 6px 1px rgb(0 0 0 / 22%);
 }
 
+.coverPageImage {
+    height:90vh ;
+    width: auto;
+    position: relative;
+    right: 0;
+    
+}
+
 
 
 @media (min-width: 1024px) {

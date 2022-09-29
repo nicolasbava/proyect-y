@@ -1,6 +1,9 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 
+// ATTENTION!!
+import styles from '../template3.module.css'
+
 type CoverPageProps = {
   name: string;
   colorName: string;
@@ -12,13 +15,7 @@ type CoverPageProps = {
   imgInformation: string;
 };
 
-const customStyle = 
-  `background: 'black',
-  z-index: '99',
-  position: 'absolute',
-  top: '20rem',
-  width: '62rem',
-  height: '16rem'`
+
 
 
 const CoverPageTwo = (props: CoverPageProps) => {
@@ -28,12 +25,12 @@ const CoverPageTwo = (props: CoverPageProps) => {
   return (
     /* FIRST PART - INICIO nav goes to here   */
     <section id='home'> 
-      <div className="mt-2 mb-16 sm:mt-0 sm:mb-0 md:flex md:flex-row md:-mt-8 lg:flex lg:flex-row lg:mt-10 h-auto">
+      <div className="mt-2 mb-16 sm:mt-0 sm:mb-0 md:flex md:flex-row md:-mt-8 lg:flex lg:flex-row lg:mt-10">
         {/* IMAGE DIV */}
-        <div className="flex flex-row px-10 pl-0 pt-48 pb-0 mb-0 md:pt-32 lg:px-10 lg:pl-40 lg:pr-16 ">
-          <div className="h-[80vh] flex flex-row content-end justify-end item-end">
+        <div className="flex flex-row px-10 pl-0 w-full   pt-48 pb-0 mb-0 md:pt-20 lg:px-10 lg:pl-40 lg:pr-16 ">
+          <div className="w-full flex flex-row content-end justify-end item-end">
             <img
-              className='transform translate-x-10 -translate-y-10 lg:translate-x-16 lg:-translate-y-16 w-auto  mg:w-8/12 lg:w-2/3 z-10 '
+              className={`transform translate-x-10 lg:h-[10px]  -translate-y-10 lg:translate-x-16 lg:-translate-y-16 w-auto lg:pr-20 z-10 ${styles.coverPageImage} `}
               style={{}}
               src={`${router.basePath + props.coverPageUrl}`}
               alt="CoverPage/png"
@@ -41,7 +38,7 @@ const CoverPageTwo = (props: CoverPageProps) => {
           </div>
         </div>
         {/* H1 TITLE DIV */}
-        <div className="absolute -mt-10  w-full sm:w-1/2 sm:-mt-40 md:w-1/2 md:mt-96 z-10 self-center ">
+        <div className="absolute -mt-10  w-full sm:w-1/2 sm:-mt-40 md:w-1/2 md:mt-96 lg:mt-72 z-10 self-center ">
           <div className='flex flex-col pb-5' >
             <div className='pl-10 lg:pl-20 bg-t4thirdy py-4 lg:py-12 xl:py-20 relative z-0'>
               <h1

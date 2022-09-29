@@ -51,7 +51,7 @@ const Home: NextPage = () => {
           pdf={CURRICULUM_DATA.CURRICULUM_VITAE}
           imgInformation={IMAGE_DATA.INFORMATION}
         />
-        <Plinth />
+
         <ContactProfileTwo
           name={PERSONAL_DATA.NAME}
           email={CONTACT_DATA.EMAIL}

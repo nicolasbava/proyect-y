@@ -92,17 +92,20 @@ const ContactProfileTwo = (props: ContactProps) => {
     return (
         <section id='informationprofile'>
             {/* CONTACT PROFILE TWO  */}
-            <div className="pr-0 lg:pr-16 mb-0 lg:mb-20">
-                <div className="pr-0 bg-t4background lg:flex lg:flex-row content-end justify-center item-end">
-                    <div className='lg:w-2/4 flex flex-col justify-center item-center'>
-                        <div className="p-10 sm:max-w-6xl xl:max-w-3xl">
+            <div className="pr-0 lg:pr-16 lg:flex lg:flex-row-reverse lg:items-center bg-t4background">
+                {/* CONTAINER TEXT PART - P BUTTON ICONS */}
+                <div className="pr-0 lg:pl-20 py-20 justify-start items-center">
+                    <div className=' flex flex-col justify-center item-center'>
+                        <div className="sm:max-w-6xl ">
+                            {/* HISTORY INFORMATION */}
                             <p className=" text-t4primary title-font lg:text-xl">
                                 {props.information}
                             </p>
                         </div>
                     </div>
-                    <div className='mr-6 ml-6 flex flex-col justify-center item-end lg:pb-20 lg:w-1/4'>
-                        <div className="pt-4 pl-0 mb-8">
+                    {/* CONTACT */}
+                    <div className='mr-6 flex flex-col justify-center lg:pb-20 lg:w-1/2 '>
+                        <div className="pt-8 ">
                             <button onClick={() => onResumeClick()}
                                 className="w-full px-8 py-8 leading-5 transition-colors duration-200 transform bg-t4secondary rounded-md hover:bg-t4secondary focus:outline-none focus:bg-t4secondary  shadow-lg">
                                 <h2 className="mx-auto justify text-base font-semibold leading-none tracking-wide text-t4primary title-font">
@@ -112,69 +115,67 @@ const ContactProfileTwo = (props: ContactProps) => {
                         </div>
 
                         {/* CONTACT ICONS */}
-                        <div className="flex flex-col">
-                            <div className="px-6 pt-4">
-                                <div className="flex flex-col  mx-auto">
-                                    <div className="grid grid-cols-4 gap-4 mt-4">
-                                        <a href={`tel:${props.phone}`} target="_blank" rel="noopener noreferrer">
-                                            <div className="flex items-center mb-3">
-                                                <div className="inline-flex items-center justify-center rounded-full flex-shrink-0">
-                                                    <img
-                                                        src={`${router.basePath}/assert/icons/phone.svg`}
-                                                        alt="logo-linkedin"
-                                                        className="h-11 w-11 rounded-full"
-                                                    />
-                                                </div>
+                        <div className="px-6 pt-4 mx-auto">
+                            
+                                <div className="grid grid-cols-4 gap-4 mt-4">
+                                    <a href={`tel:${props.phone}`} target="_blank" rel="noopener noreferrer">
+                                        <div className="flex items-center mb-3">
+                                            <div className="inline-flex items-center justify-center rounded-full flex-shrink-0">
+                                                <img
+                                                    src={`${router.basePath}/assert/icons/phone.svg`}
+                                                    alt="logo-linkedin"
+                                                    className="h-11 w-11 rounded-full"
+                                                />
                                             </div>
-                                        </a>
-                                        <a href={`mailto:${props.email}`} target="_blank" rel="noopener noreferrer">
-                                            <div className="flex items-center mb-3" >
-                                                <div className="inline-flex items-center justify-center rounded-full flex-shrink-0">
-                                                    <img
-                                                        src={`${router.basePath}/assert/icons/email.svg`}
-                                                        alt="logo-linkedin"
-                                                        className="h-11 w-11 rounded-full"
-                                                    />
-                                                </div>
+                                        </div>
+                                    </a>
+                                    <a href={`mailto:${props.email}`} target="_blank" rel="noopener noreferrer">
+                                        <div className="flex items-center mb-3" >
+                                            <div className="inline-flex items-center justify-center rounded-full flex-shrink-0">
+                                                <img
+                                                    src={`${router.basePath}/assert/icons/email.svg`}
+                                                    alt="logo-linkedin"
+                                                    className="h-11 w-11 rounded-full"
+                                                />
                                             </div>
-                                        </a>
-                                        <a href={`/${props.url}/map`} target="_blank" rel="noopener noreferrer">
-                                            <div className="flex items-center mb-3 cursor-pointer" onClick={() => onOpenModal()}>
-                                                <div className="inline-flex items-center justify-center rounded-full flex-shrink-0">
-                                                    <img
-                                                        src={`${router.basePath}/assert/icons/direccion.svg`}
-                                                        alt="logo-linkedin"
-                                                        className="h-11 w-11 rounded-full"
-                                                    />
-                                                </div>
+                                        </div>
+                                    </a>
+                                    <a href={`/${props.url}/map`} target="_blank" rel="noopener noreferrer">
+                                        <div className="flex items-center mb-3 cursor-pointer" onClick={() => onOpenModal()}>
+                                            <div className="inline-flex items-center justify-center rounded-full flex-shrink-0">
+                                                <img
+                                                    src={`${router.basePath}/assert/icons/direccion.svg`}
+                                                    alt="logo-linkedin"
+                                                    className="h-11 w-11 rounded-full"
+                                                />
                                             </div>
-                                        </a>
-                                        <a href={`https://api.whatsapp.com/send?phone=${props.phone}`} target="_blank" rel="noopener noreferrer">
-                                            <div className="flex items-center mb-3">
-                                                <div className="inline-flex items-center justify-center rounded-full flex-shrink-0">
-                                                    <img
-                                                        src={`${router.basePath}/assert/icons/whatsapp-color.png`}
-                                                        alt="logo-linkedin"
-                                                        className="h-11 w-11 rounded-full"
-                                                    />
-                                                </div>
+                                        </div>
+                                    </a>
+                                    <a href={`https://api.whatsapp.com/send?phone=${props.phone}`} target="_blank" rel="noopener noreferrer">
+                                        <div className="flex items-center mb-3">
+                                            <div className="inline-flex items-center justify-center rounded-full flex-shrink-0">
+                                                <img
+                                                    src={`${router.basePath}/assert/icons/whatsapp-color.png`}
+                                                    alt="logo-linkedin"
+                                                    className="h-11 w-11 rounded-full"
+                                                />
                                             </div>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </div>
+                            
                         </div>
+                        
                     </div>
 
-                    {/* IMAGE */}
-                    <div className='mt-20 pb-10 lg:w-1/4 flex flex-col'>
-
-                        <img
-                            src={`${router.basePath + props.imgInformation}`}
-                            alt="CoverPage/png"
-                            className='pb-10 transform translate-x-0 translate-y-0 lg:translate-x-16 lg:translate-y-16'
-                        />
-                    </div>
+                </div>
+                {/* IMAGE CONTAINER */}
+                <div className='mt-0 pb-10 w-1/2 lg:w-full '>
+                    <img
+                        src={`${router.basePath + props.imgInformation}`}
+                        alt="CoverPage/png"
+                        className='pb-10 transform translate-y-0'
+                    />
                 </div>
             </div>
         </section >
