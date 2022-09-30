@@ -46,12 +46,13 @@ const FormContact = (props: FormContactProps) => {
             'userMessage': userMessage
         }
         console.log(template_params);
+        
         if (isFormValid()) {
             emailjs.sendForm(
-                'service_jdjxzak',
-                'template_pco13tx',
+                'service_uaspm8b',
+                'template_515111c',
                 e.target,
-                'user_F01lHHR9vneIUbIRTcwx6').then(res => {
+                'WSCfrih77YZvBQ-QY').then(res => {
                     console.log(res)
                 }).catch(err => {
                     console.log(err)

@@ -3,8 +3,6 @@ import Head from 'next/head';
 import type { NextPage } from 'next';
 import Layout from '../../components/template1/layout/layout';
 import { CoverPageBlue } from '../../components/template1/coverpage/coverpageblue';
-import { CoverPageDownLeft } from '../../components/template1/coverpage/coverpagedownleft';
-import { CoverPageDownLeftBox } from '../../components/template1/coverpage/coverpagedownleftbox';
 import { CoverPageLogo } from '../../components/template1/coverpage/CoverPageLogo';
 import { InformationProfile } from '../../components/template1/information/information';
 import { Gallery } from '../../components/template1/gallery/gallery';
@@ -15,8 +13,8 @@ import { PlinthTitle } from '../../components/template1/plinthtitle/plinthtitle'
 import { Plinth } from '../../components/template1/plinth/plinth';
 
 // IMPORT DATA
-import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/aj-gomez-ramirez/config-data'; //CAMBIAR DIRECCION
-import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/aj-gomez-ramirez/config-data'; //CAMBIAR DIRECCION
+import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/aa-prueba/config-data'; //CAMBIAR DIRECCION
+import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/aa-prueba/config-data'; //CAMBIAR DIRECCION
 
 const ProfilePage: NextPage = () => {
   return (

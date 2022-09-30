@@ -27,12 +27,13 @@ const FormContactColor = (props: FormContactProps) => {
             'userMessage': userMessage
         }
         console.log(template_params);
+        
         if (isFormValid()) {
             emailjs.sendForm(
-                'service_n7mdmn7',
-                'template_odnmtmb',
+                'service_uaspm8b',
+                'template_515111c',
                 e.target,
-                'user_gSql0AlUbxZQv3aDjsbJU').then(res => {
+                'WSCfrih77YZvBQ-QY').then(res => {
                     console.log(res)
                 }).catch(err => {
                     console.log(err)

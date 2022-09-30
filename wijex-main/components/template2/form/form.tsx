@@ -39,12 +39,13 @@ const FormContact = (props: FormContactProps) => {
             'userMessage': userMessage
         }
         console.log(template_params);
+       
         if (isFormValid()) {
             emailjs.sendForm(
-                'service_jdjxzak',
-                'template_pco13tx',
+                'service_uaspm8b',
+                'template_515111c',
                 e.target,
-                'user_F01lHHR9vneIUbIRTcwx6').then(res => {
+                'WSCfrih77YZvBQ-QY').then(res => {
                     console.log(res)
                 }).catch(err => {
                     console.log(err)
@@ -226,13 +227,13 @@ const FormContact = (props: FormContactProps) => {
                                                     className="block w-full px-4 py-2 mt-2 text-primary bg-t2inputcolor border border-t2inputcolor rounded-md dark:bg-t2inputcolor dark:text-primary dark:border-t2inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring duration-200 ease-in-out"></textarea>
                                             </div>
                                         </div>
-                                        <div className="flex justify-center lg:justify-end mt-6">
+                                        <div className="flex justify-center lg:justify-start mt-6">
                                             <button
                                                 type='submit'
                                                 className="px-8 py-3 pt-4 leading-5 transition-colors duration-200 transform bg-t2secondary rounded-md hover:bg-t2secondaryfocus:outline-none focus:bg-t2secondary shadow-lg">
-                                                <h1 className="mx-auto text-base font-semibold leading-none tracking-tighter text-t2whitecolor title-font">
+                                                <p className="mx-auto text-base font-semibold leading-none tracking-tighter text-t2whitecolor title-font">
                                                     ENVIAR
-                                                </h1>
+                                                </p>
                                             </button>
                                         </div>
                                     </form>

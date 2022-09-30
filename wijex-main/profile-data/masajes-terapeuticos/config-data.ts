@@ -1,8 +1,8 @@
 const PERSONAL_DATA = {
-    NAME: 'MASAJES TERAPEUTICOS',
-    COLORNAME: '#ff0000',
+    NAME: 'MASAJES TERAPÉUTICOS',
+    COLORNAME: '#ffdddd',
     DESCRIPTION: 'JOSE GONZALEZ',
-    COLORDESCRIPTION: '#ff6600',
+    COLORDESCRIPTION: '#ffc59e',
     HISTORY: 'Todos necesitamos un tiempo para relajarnos. Masajes terapéuticos descontracturantes relajantes. Piedras calientes. Aromaterapia. reflexología. Maderoterapia rodillo reductor y modelador.'
 }
 

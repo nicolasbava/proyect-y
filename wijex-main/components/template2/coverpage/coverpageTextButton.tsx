@@ -47,12 +47,12 @@ const CoverPageTextButton = (props: CoverPageProps) => {
                   >
                     {props.name}
                   </h1>
-                  <p
+                  <h2
                     className="leading-none tracking-tighter uppercase text-base lg:text-xl xl:text-3xl"
                     style={{ color: props.colorDescription }}
                   >
                     {props.description}
-                  </p>
+                  </h2>
                 </div>
           
             </div>
@@ -77,7 +77,7 @@ const CoverPageTextButton = (props: CoverPageProps) => {
               <div className='lg:w-2/3 flex flex-col self-center h-full'>
                 <div className='flex flex-col self-center justify-between item-between content-between h-full'>
                   <div className="pt-5 px-3">
-                    <p className={`text-justify text-btncolor title-font font-bold text-xs ${lineClamp} lg:text-xl`}>
+                    <p className={` text-btncolor title-font font-bold text-xs ${lineClamp} lg:text-xl`}>
                       {props.information}
                     </p>
                     {

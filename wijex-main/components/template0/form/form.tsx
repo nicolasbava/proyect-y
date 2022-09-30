@@ -13,6 +13,7 @@ const FormContact = (props: FormContactProps) => {
     const [userEmail, setUserEmail] = React.useState<string>('');
     const [userPhone, setUserPhone] = React.useState<string>('');
     const [userMessage, setUserMessage] = React.useState<string>('');
+
     const sendEmail = (e: any) => {
         e.preventDefault();
         let template_params: any = {
@@ -27,10 +28,10 @@ const FormContact = (props: FormContactProps) => {
         console.log(template_params);
         if (isFormValid()) {
             emailjs.sendForm(
-                'service_jdjxzak',
-                'template_pco13tx',
+                'service_uaspm8b',
+                'template_515111c',
                 e.target,
-                'user_F01lHHR9vneIUbIRTcwx6').then(res => {
+                'WSCfrih77YZvBQ-QY').then(res => {
                     console.log(res)
                 }).catch(err => {
                     console.log(err)
@@ -62,6 +63,7 @@ const FormContact = (props: FormContactProps) => {
         <section className="lg:container px-10 py-6 mx-auto" >
             <form onSubmit={sendEmail}>
                 <div className="grid grid-cols-1 gap-8 mt-4 sm:grid-cols-2 md:grid-cols-4">
+                    {/* start hidden */}
                     <div hidden>
                         <input
                             id="name"
@@ -80,6 +82,7 @@ const FormContact = (props: FormContactProps) => {
                             onChange={(value: any) => setEmail(value.currentTarget.value)}
                             className="block w-full px-4 py-2 mt-2 text-primary bg-inputcolor border border-inputcolor rounded-md dark:bg-inputcolor dark:text-primary dark:border-inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
                     </div>
+                    {/* end hidden */}
                     <div>
                         <label htmlFor="userName" className="pl-4 text-primary dark:text-secondary">Nombre</label>
                         <input

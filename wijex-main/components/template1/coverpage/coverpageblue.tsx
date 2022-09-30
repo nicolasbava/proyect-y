@@ -26,7 +26,6 @@ const CoverPageBlue = (props: CoverPageProps) => {
 
           {/* cartel alberga texto  */}
           <div className='text-left sm:w-1/2 pl-10 px-2 sm:px-0 mb-4 h-full sm:text-left sm:ml-10 md:ml-20 lg:mt-96 '
-                // style={{marginTop: '7rem', paddingBottom: '1rem'}}
           >
             {/* NAME - H1 . ADD COLOR FROM PROP */}
             <h1
