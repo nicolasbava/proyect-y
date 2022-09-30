@@ -14,7 +14,7 @@ const IMAGE_DATA = {
     GALLERY_1: '/profile/coop-san-pedro-del-tingo/COOP-SAN-PEDRO-DEL-TINGO_GALLERY-1.jpg',
     GALLERY_2: '/profile/coop-san-pedro-del-tingo/COOP-SAN-PEDRO-DEL-TINGO_GALLERY-2.jpg',
     GALLERY_3: '/profile/coop-san-pedro-del-tingo/COOP-SAN-PEDRO-DEL-TINGO_GALLERY-3.jpg',
-    BACKGROUND: '/profile/coop-san-pedro-del-tingo/COOP-SAN-PEDRO-DEL-TINGO_PORTADA.png'
+    BACKGROUND: '/profile/coop-san-pedro-del-tingo/COOP-SAN-PEDRO-DEL-TINGO_PORTADA2.png'
 }
 
 const CONTACT_DATA = {

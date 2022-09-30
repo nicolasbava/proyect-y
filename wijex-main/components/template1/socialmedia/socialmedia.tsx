@@ -30,7 +30,7 @@ const SocialMedia = (props: SocialMediaProps) => {
                                     width={40}
                                     height={40}
                                     alt="logo-linkedin"
-                                    className="rounded-full"
+                                    className="rounded-full shadow-xl hover:mt-5 hover:shadow-2xl"
                                 />
                             </a>
                         }
@@ -42,7 +42,7 @@ const SocialMedia = (props: SocialMediaProps) => {
                                     width={40}
                                     height={40}
                                     alt="logo-linkedin"
-                                    className="rounded-full"
+                                    className="rounded-full  shadow-xl "
                                 />
                             </a>
                         }
@@ -54,7 +54,7 @@ const SocialMedia = (props: SocialMediaProps) => {
                                     width={40}
                                     height={40}
                                     alt="logo-linkedin"
-                                    className="rounded-full"
+                                    className="rounded-full  shadow-xl " 
                                 />
                             </a>
                         }
@@ -66,7 +66,7 @@ const SocialMedia = (props: SocialMediaProps) => {
                                     width={40}
                                     height={40}
                                     alt="logo-linkedin"
-                                    className="rounded-full"
+                                    className="rounded-full  shadow-xl "
                                 />
                             </a>
                         }
@@ -78,7 +78,7 @@ const SocialMedia = (props: SocialMediaProps) => {
                                     width={40}
                                     height={40}
                                     alt="logo-linkedin"
-                                    className="rounded-full"
+                                    className="rounded-full  shadow-xl "
                                 />
                             </a>
                         }
@@ -90,7 +90,7 @@ const SocialMedia = (props: SocialMediaProps) => {
                                     alt="logo-linkedin"
                                     width={40}
                                     height={40}
-                                    className="rounded-full"
+                                    className="rounded-full  shadow-xl "
                                 />
                             </a>
                         }
@@ -104,7 +104,7 @@ const SocialMedia = (props: SocialMediaProps) => {
                                     alt="logo-linkedin"
                                     width={40}
                                     height={40}
-                                    className="rounded-full"
+                                    className="rounded-full  shadow-xl "
                                 />
                             </a>
                         }
@@ -117,7 +117,7 @@ const SocialMedia = (props: SocialMediaProps) => {
                                     alt="logo-linkedin"
                                     width={40}
                                     height={40}
-                                    className="rounded-full"
+                                    className="rounded-full  shadow-xl "
                                 />
                             </a>
                         }

@@ -20,12 +20,12 @@ const CoverPageBlue = (props: CoverPageProps) => {
         {/* img de fondo */}
         <div 
           className='mt-20 flex flex-col items-baseline justify-end special lg:h-screen lg:mt-16'
-          style={{backgroundImage:`url(${router.basePath + props.coverPageUrl})`, minHeight:'35vh', backgroundSize:'cover', backgroundPosition: 'center center' 
+          style={{backgroundImage:`url(${router.basePath + props.coverPageUrl})`, minHeight:'40vh', backgroundSize:'cover', backgroundPosition: 'top center' 
           }}
         > 
 
           {/* cartel alberga texto  */}
-          <div className='text-left sm:w-1/2 pl-10 px-2 sm:px-0 mb-4 h-full sm:text-left sm:ml-10 md:ml-20 lg:mt-96 '
+          <div className='opacity-0 text-left sm:w-1/3 pl-10 px-2 sm:px-0 mb-4 h-full sm:text-left sm:ml-10 md:ml-20 md:opacity-100 lg:mt-96 '
           >
             {/* NAME - H1 . ADD COLOR FROM PROP */}
             <h1
