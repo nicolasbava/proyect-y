@@ -1,5 +1,5 @@
 const PERSONAL_DATA = {
-    NAME: 'Sandra Angelica Ballesteros Palacios',
+    NAME: 'Sandra Ballesteros',
     COLORNAME: '#000000',
     DESCRIPTION: 'Consultora Wijex',
     COLORDESCRIPTION: '#000000',
@@ -7,12 +7,13 @@ const PERSONAL_DATA = {
 }
 
 const IMAGE_DATA = {
-    COVERPAGE: '/profile/sandra-ballesteros/SB-1.png', //CAMBIAR DIRECCION DE LAS IMAGENE
+    BANNER: '/profile/sandra-ballesteros/SB-1.png',
+    COVERPAGE: '/profile/sandra-ballesteros/SB-2.png', //CAMBIAR DIRECCION DE LAS IMAGENE
     INFORMATION: '/profile/sandra-ballesteros/SB-2.png',
-    AVATAR: '/profile/sandra-ballesteros/SB-3.png', // cambio por perfil2
-    GALLERY_1: '/profile/sandra-ballesteros/SB-4.png',
+    AVATAR: '/profile/sandra-ballesteros/SB-1.png', // cambio por perfil2
+    GALLERY_1: '/profile/sandra-ballesteros/SB-3.png',
     GALLERY_2: '/profile/sandra-ballesteros/SB-5.png',
-    GALLERY_3: '/profile/sandra-ballesteros/SB-6.png'
+    GALLERY_3: '/profile/sandra-ballesteros/SB-6.png',
 }
 
 const CONTACT_DATA = {

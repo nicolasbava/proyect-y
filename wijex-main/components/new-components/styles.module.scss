@@ -1,0 +1,34 @@
+.section {
+    margin-top: 10vh;
+    background-color: grey;
+    h1 {
+        display: none;
+    }
+}
+
+@media (min-width: 640px){
+    .section {
+        display: flex;
+
+        .text-conteiner {
+            width: 66%;
+        }
+
+        h1 {
+            display: block;
+            color: black;
+            font-size: 2rem;
+            width: 33%;
+        }
+
+        .image-conteiner {
+            max-width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            width: 33%;
+
+        }
+
+    }
+}
+

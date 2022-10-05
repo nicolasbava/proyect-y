@@ -84,13 +84,13 @@ const FormContact = (props: FormContactProps) => {
     return (
         <section id='contactprofile'>
             <div
-                style={{ backgroundImage: `url(${router.basePath + props.background})` }}
+                // style={{ backgroundImage: `url(${router.basePath + props.background})` }}
                 className='bg-cover bg-center bg-no-repeat'
             >
                 <div className="bg-t2primary pb-12 pt-12 bg-opacity-50 text-center sm:text-left">
                     <div className='lg:flex lg:flex-row'>
                         <div className='lg:w-1/2'>
-                            <div className="sm:flex sm:flex-row pt-10 mx-0 justify-center md:mb-8">
+                            <div className="sm:flex sm:flex-row pt-10 mx-0 justify-center ">
                                 <div className="lg:flex flex-col self-center sm:max-w-5xl xl:max-w-2xl z-10">
                                     <div className="mx-auto flex items-center justify-center flex-col">
                                         <img
@@ -104,17 +104,18 @@ const FormContact = (props: FormContactProps) => {
                                 </div>
                             </div>
                             <div className="flex">
-                                <div className="mx-auto md:pl-10">
+                                <div className="mx-auto ">
                                     <div className="flex flex-col self-center p-10">
                                         <div className="flex items-center justify-center lg:items-start lg:justify-center flex-col">
-                                            <h1 className="mb-3 text-2xl font-bold leading-none tracking-wide uppercase text-blackcolor title-font lg:text-3xl">
+                                            <h1 className="text-center mb-3 text-2xl font-bold leading-none tracking-wide uppercase text-blackcolor title-font lg:text-3xl">
                                                 {props.name}
                                             </h1>
                                         </div>
-                                        <div className="grid grid grid-cols-4 gap-4 mt-4" style={{ justifyContent: 'start', alignContent: 'start' }}>
+                                        {/* ICONS PART */}
+                                        <div className="grid grid-cols-4 gap-4 mt-6 " style={{ justifyContent: 'center', alignContent: 'center' }}>
                                             <a href={`tel:${props.phone}`} target="_blank" rel="noopener noreferrer">
                                                 <div className="flex items-center mb-3">
-                                                    <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                                                    <div className="w-11 mx-auto h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
                                                         <img
                                                             src={`${router.basePath}/assert/icons/t2phone.svg`}
                                                             width={35}
@@ -155,11 +156,11 @@ const FormContact = (props: FormContactProps) => {
                                                 <div className="flex items-center mb-3">
                                                     <div className="w-11 h-11 inline-flex items-center justify-center rounded-full flex-shrink-0">
                                                         <img
+                                                        className="rounded-full mx-auto"
                                                             src={`${router.basePath}/assert/icons/whatsapp-color.png`}
                                                             width={35}
                                                             height={35}
                                                             alt="logo-linkedin"
-                                                            className="rounded-full"
                                                         />
                                                     </div>
                                                 </div>
@@ -169,7 +170,7 @@ const FormContact = (props: FormContactProps) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='lg:w-1/2 lg:pt-20 lg:pr-20'>
+                        <div className='lg:w-1/2 lg:pt-5 lg:pr-20'>
                             <div className="lg:container px-10 py-6 mx-auto">
                                 <div>
                                     <form onSubmit={sendEmail} className='z-20 opacity-100'>
@@ -178,16 +179,18 @@ const FormContact = (props: FormContactProps) => {
                                             <div>
                                                 <label htmlFor="userName" className="sm:pl-4 text-t2labelcolor dark:text-secondary">Nombre</label>
                                                 <input
+                                                    placeholder="ej: Estela Martinez"
                                                     id="username"
                                                     name='userName'
                                                     type="text"
                                                     value={userName}
                                                     onChange={(value: any) => setUserName(value.currentTarget.value)}
-                                                    className="block w-full  px-4 py-2 mt-2 text-primary bg-t2inputcolor border border-t2inputcolor rounded-md dark:bg-t2inputcolor dark:text-primary dark:border-t2inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
+                                                    className="block w-full px-2 py-2 mt-2 bg-t2inputcolor  rounded-md focus:border-blue-800 focus:outline-none focus:ring " />
                                             </div>
                                             <div>
                                                 <label className="sm:pl-4 text-t2labelcolor dark:text-secondary">Asunto</label>
                                                 <input
+                                                    placeholder="ej: Presupuesto"
                                                     id="subject"
                                                     name="subject"
                                                     type="text"
@@ -198,6 +201,7 @@ const FormContact = (props: FormContactProps) => {
                                             <div>
                                                 <label className="sm:pl-4 text-t2labelcolor dark:text-secondary" >E-mail</label>
                                                 <input
+                                                    placeholder="ej: estelamartinez@gmail.com"
                                                     id="userEmail"
                                                     name="userEmail"
                                                     type="email"
@@ -208,6 +212,7 @@ const FormContact = (props: FormContactProps) => {
                                             <div>
                                                 <label className="sm:pl-4 text-t2labelcolor dark:text-secondary">Teléfono</label>
                                                 <input
+                                                    placeholder="ej: +5896548575"
                                                     id="userPhone"
                                                     name="userPhone"
                                                     type="text"
@@ -220,6 +225,7 @@ const FormContact = (props: FormContactProps) => {
                                             <div className="relative mb-4">
                                                 <label className="sm:pl-4 text-t2labelcolor dark:text-secondary">Dejá tu consulta</label>
                                                 <textarea
+                                                    placeholder="Escribe tu mensaje..."
                                                     id="userMessage"
                                                     name="userMessage"
                                                     value={userMessage}

@@ -2,6 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 import type { NextPage } from 'next';
 import Layout from '../../components/template1/layout/layout';
+
+
 import { CoverPageBlue } from '../../components/template1/coverpage/coverpageblue';
 import { CoverPageLogo } from '../../components/template1/coverpage/CoverPageLogo';
 import { InformationProfile } from '../../components/template1/information/information';
@@ -15,6 +17,7 @@ import { Plinth } from '../../components/template1/plinth/plinth';
 // IMPORT DATA
 import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/aa-prueba/config-data'; //CAMBIAR DIRECCION
 import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/aa-prueba/config-data'; //CAMBIAR DIRECCION
+import { NewLandingSection } from '../../components/new-components/LandingSection';
 
 const ProfilePage: NextPage = () => {
   return (
@@ -38,13 +41,15 @@ const ProfilePage: NextPage = () => {
         avatar={IMAGE_DATA.AVATAR}
         url={'aj-gomez-ramirez'}
       >
-        <CoverPageBlue
-          name={PERSONAL_DATA.NAME}
-          description={PERSONAL_DATA.DESCRIPTION}
-          colorName={PERSONAL_DATA.COLORNAME}
-          colorDescription={PERSONAL_DATA.COLORDESCRIPTION}
-          coverPageUrl={IMAGE_DATA.COVERPAGE}
+
+        <NewLandingSection 
+        name={PERSONAL_DATA.NAME}
+        description={PERSONAL_DATA.DESCRIPTION}
+        colorName={PERSONAL_DATA.COLORNAME}
+        colorDescription={PERSONAL_DATA.COLORDESCRIPTION}
+        coverPageUrl={IMAGE_DATA.COVERPAGE} 
         />
+        
         <Plinth />
         <InformationProfile
           name={PERSONAL_DATA.NAME}

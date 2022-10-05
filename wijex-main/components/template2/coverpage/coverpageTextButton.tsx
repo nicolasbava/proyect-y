@@ -35,14 +35,14 @@ const CoverPageTextButton = (props: CoverPageProps) => {
 
   return (
     <section id='informationprofile'>
-      <div className='flex flex-col mt-10 lg:mt-20' >
-        <div className="grid grid-cols-2 gap-4">
-          <div className='h-full lg:pb-36 xl:pb-44'>
-            <div className="absolute w-2/3 z-10 left-0 mt-10 lg:mt-32">
-
-                <div className='pl-5 mt-38 sm:mt-20 sm:pl-10 lg:pl-20 bg-t2thirdy py-4 lg:py-6 xl:py-8'>
+      <div className='mt-10 lg:mt-20' >
+        <div className="grid grid-cols-2">
+            {/* LEFT PART - TEXT + IMAGE PART */}
+          <div className='h-full'>
+            <div className=" z-10 left-0 mt-10 lg:mt-32">
+                <div className='pl-3 pr-5 mt-38 sm:mt-20 sm:pl-10 lg:pl-20 bg-t2thirdy py-4 lg:py-6 xl:py-8'>
                   <h1
-                    className="font-bold uppercase title-font text-2xl lg:text-5xl xl:text-7xl"
+                    className="font-bold  uppercase title-font text-lg sm:text-3xl lg:text-5xl xl:text-7xl"
                     style={{ color: props.colorName }}
                   >
                     {props.name}
@@ -54,27 +54,22 @@ const CoverPageTextButton = (props: CoverPageProps) => {
                     {props.description}
                   </h2>
                 </div>
-          
             </div>
-            <div className='relative flex flex-col h-full justify-end lg:mt-36 xl:mt-44'>
-              <div className='lg:w-2/3 self-center '>
-                <img
-                  src={`${router.basePath + props.imgInformation}`}
-                  alt="CoverPage/png"
-                />
-              </div>
-            </div>
+            <img
+              className=' px-4'
+              src={`${router.basePath + props.imgInformation}`}
+              alt="CoverPage/png"
+            />
           </div>
+
+          {/* RIGHT PART - IMAGE + TEXT */}
           <div className='flex flex-col '>
-            <div className='lg:w-2/3 self-center'>
               <img
                 src={`${router.basePath + props.coverPageUrl}`}
                 alt="CoverPage/png"
-
               />
-            </div>
             <div className='flex flex-col h-full'>
-              <div className='lg:w-2/3 flex flex-col self-center h-full'>
+              <div className=' flex flex-col h-full'>
                 <div className='flex flex-col self-center justify-between item-between content-between h-full'>
                   <div className="pt-5 px-3">
                     <p className={` text-btncolor title-font font-bold text-xs ${lineClamp} lg:text-xl`}>
