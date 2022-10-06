@@ -27,7 +27,7 @@ export default function HeaderNav(props: Props) {
         console.log("window.innerHeight", window.innerHeight);
     }, []);
     return (
-        <header className="bg-gradient-to-r from-fourth to-primary">
+        <header className="bg-gradient-to-r fixed w-full z-50 from-fourth to-primary ">
             <nav className="container mx-auto px-6 md:px-12 py-4">
                 <div className="md:flex justify-between items-center" >
                     <div className="flex justify-between items-center" >
@@ -115,7 +115,7 @@ export default function HeaderNav(props: Props) {
                                         );
                                     }}
                                 >
-                                    <div className='flex flex-row items-center'>
+                                    <div className='flex flex-row items-center md:hidden'>
                                         <img
                                             src={`${router.basePath}/assert/icons/download.png`}
                                             width={16}

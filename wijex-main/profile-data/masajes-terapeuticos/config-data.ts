@@ -1,23 +1,21 @@
 const PERSONAL_DATA = {
     NAME: 'MASAJES TERAPÉUTICOS',
-    COLORNAME: '#ffdddd',
+    COLORNAME: '#fff',
     DESCRIPTION: 'JOSE GONZALEZ',
-    COLORDESCRIPTION: '#ffc59e',
-    HISTORY: 'Todos necesitamos un tiempo para relajarnos. Masajes terapéuticos descontracturantes relajantes. Piedras calientes. Aromaterapia. reflexología. Maderoterapia rodillo reductor y modelador.'
+    COLORDESCRIPTION: '#fff',
+    HISTORY: 'Todos necesitamos un tiempo para relajarnos. Masajes terapéuticos descontracturantes relajantes. Piedras calientes. Aromaterapia. reflexología. Maderoterapia rodillo reductor y modelador.',
+    TEMPLATE: '#3088f2'
 }
-
-// TEMPLATE 2
-// COLOR TEMPLATE #000
-// 1 #ff0000
-// 2 #ff6600
+// #ff0000
+// #ff6600
 
 const IMAGE_DATA = {
     BANNER: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_PORTADA.png', //CAMBIAR DIRECCION DE LAS IMAGENES
     INFORMATION: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_GALERIA-04.png',
-    AVATAR: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_PERFIL2.png',
-    GALLERY_1: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_GALERIA-05.png',
+    AVATAR: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_BANNER2.png',
+    GALLERY_1: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_GALERIA-1.png',
     GALLERY_2: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_GALERIA-06.png',
-    GALLERY_3: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_GALERIA-04.png',
+    GALLERY_3: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_GALERIA-05.png',
     BACKGROUND: '/profile/masajes-terapeuticos/MASAJES-TERAPEUTICOS_GALERIA-04.png'
 }
 

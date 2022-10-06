@@ -58,7 +58,7 @@ const InformationProfile = (props: BannerProps) => {
                                     className="px-8 py-2 pt-3 leading-5 transition-colors duration-200 transform bg-t1secondary rounded-md hover:bg-t1secondary focus:outline-none focus:bg-t1secondary  shadow-lg"
                                     style={{ color: 'white' }}
                                 >
-                                    <h2 className="mx-auto justify text-base font-semibold leading-none tracking-wide text-t1primary title-font">
+                                    <h2 className="mx-auto text-base font-semibold leading-none tracking-wide text-t1primary title-font">
                                         {props.btnName}
                                     </h2>
                                 </button>

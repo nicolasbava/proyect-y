@@ -14,6 +14,12 @@ type ContactProps = {
     url: string;
 };
 
+// HI THERE
+// THIS IS THE SAME COMPONENT AS CONTACT COVER BUT THE DIFFERENCE IS:
+// IMAGE IS --- CONTAIN --- SIZE
+// If you need contain image size use this component.
+// If you need cover size use "contactcover"
+
 
 const ContactProfile = (props: ContactProps) => {
     const router = useRouter();
@@ -39,12 +45,13 @@ const ContactProfile = (props: ContactProps) => {
            
                 <div className="lg:flex flex-col self-center sm:max-w-5xl xl:max-w-2xl z-10">
                     <div className="mx-auto flex items-center justify-center flex-col">
+                        {/* CONTAIN SIZE */}
                         <img
                             src={`${router.basePath + props.avatar}`}
                             width={200}
                             height={200}
                             alt="logo-wijex"
-                            className="h-80 w-80 object-contain rounded-full -mt-5"
+                            className="h-40 w-40 lg:h-60 lg:w-60 object-contain rounded-full -mt-5"
                         />
                     </div>
                 </div>

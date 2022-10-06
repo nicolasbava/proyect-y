@@ -38,7 +38,7 @@ export default function HeaderNav(props: Props) {
                             />
                         </Link>
                         <button
-                            className=' inline-flex p-3 rounded md:hidden text-whitecolor ml-auto hover:text-whitecolor outline-none'
+                            className=' inline-flex p-3 rounded md:hidden  ml-auto  outline-none'
                             onClick={handleClick}
                         >
                             <svg

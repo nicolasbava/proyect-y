@@ -177,7 +177,7 @@ const FormContact = (props: FormContactProps) => {
                                         <div className="grid grid-cols-1 gap-8 mt-4 sm:grid-cols-2 md:grid-cols-2">
                                            
                                             <div>
-                                                <label htmlFor="userName" className="sm:pl-4 text-t2labelcolor dark:text-secondary">Nombre</label>
+                                                <label htmlFor="userName" className=" text-t2labelcolor text-center sm:text-left sm:pl-4">Nombre</label>
                                                 <input
                                                     placeholder="ej: Estela Martinez"
                                                     id="username"
@@ -185,10 +185,10 @@ const FormContact = (props: FormContactProps) => {
                                                     type="text"
                                                     value={userName}
                                                     onChange={(value: any) => setUserName(value.currentTarget.value)}
-                                                    className="block w-full px-2 py-2 mt-2 bg-t2inputcolor  rounded-md focus:border-blue-800 focus:outline-none focus:ring " />
+                                                    className="text-center sm:text-left block w-full px-2 py-2 mt-2 bg-t2inputcolor  rounded-md focus:border-blue-800 focus:outline-none focus:ring " />
                                             </div>
                                             <div>
-                                                <label className="sm:pl-4 text-t2labelcolor dark:text-secondary">Asunto</label>
+                                                <label className="text-center sm:text-left sm:pl-4  text-t2labelcolor dark:text-secondary">Asunto</label>
                                                 <input
                                                     placeholder="ej: Presupuesto"
                                                     id="subject"

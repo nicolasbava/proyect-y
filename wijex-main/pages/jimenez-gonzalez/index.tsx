@@ -10,6 +10,8 @@ import { ContactProfile } from '../../components/template1/contact/contact';
 import { SocialMedia } from '../../components/template1/socialmedia/socialmedia';
 import { PlinthColorTitle } from '../../components/template1/plinthtitle/plinthcolortitle';
 import { InformationColorProfile } from '../../components/template1/information/informationcolor';
+
+// import data
 import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/jimenez-gonzalez/config-data'; //CAMBIAR DIRECCION
 import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/jimenez-gonzalez/config-data'; //CAMBIAR DIRECCION
 

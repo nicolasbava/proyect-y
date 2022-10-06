@@ -1,16 +1,27 @@
 import React from 'react';
 import Head from 'next/head';
 import type { NextPage } from 'next';
-import Layout from '../../components/template2/layout/layout';
-import FormContact from '../../components/template2/form/form';
-import { Gallery } from '../../components/template2/gallery/gallery';
-import { SocialMedia } from '../../components/template2/socialmedia/socialmedia';
-import { PlinthTitle } from '../../components/template2/plinthtitle/plinthtitle';
-import { CoverPageTextButton } from '../../components/template2/coverpage/coverpageTextButton';
+import Layout from '../../components/template1/layout/layout';
+import LayoutWhite from '../../components/template1/layout/layoutwhite';
+import { Gallery } from '../../components/template1/gallery/gallery';
+import FormContactColor from '../../components/template1/form/formcolor';
+
+import { CoverPage } from '../../components/template1/coverpage/coverpage';
+import { CoverPageBlue } from '../../components/template1/coverpage/coverpageblue';
+import { CoverPageWhite } from '../../components/template1/coverpage/coverpagewhite';
+
+import { ContactProfile } from '../../components/template1/contact/contact';
+import { ContactProfileCover } from '../../components/template1/contact/contactcover';
+import { SocialMedia } from '../../components/template1/socialmedia/socialmedia';
+
+import { PlinthColor } from '../../components/template1/plinth/plinthcolor';
+import { PlinthColorTitle } from '../../components/template1/plinthtitle/plinthcolortitle';
+import { InformationColorProfile } from '../../components/template1/information/informationcolor';
 
 // import data
 import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/masajes-terapeuticos/config-data'; //CAMBIAR DIRECCION
 import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/masajes-terapeuticos/config-data'; //CAMBIAR DIRECCION
+
 
 const ProfilePage: NextPage = () => {
   return (
@@ -34,16 +45,58 @@ const ProfilePage: NextPage = () => {
         avatar={IMAGE_DATA.AVATAR}
         url={'masajes-terapeuticos'}
       >
-        <CoverPageTextButton
+        <CoverPageBlue
           name={PERSONAL_DATA.NAME}
           description={PERSONAL_DATA.DESCRIPTION}
           colorName={PERSONAL_DATA.COLORNAME}
           colorDescription={PERSONAL_DATA.COLORDESCRIPTION}
           coverPageUrl={IMAGE_DATA.BANNER}
-          information={PERSONAL_DATA.HISTORY}
+        />
+         <PlinthColor
+          color={PERSONAL_DATA.TEMPLATE}
+        />
+        {/* <PlinthColor color={PERSONAL_DATA.TEMPLATE} /> */}
+        <InformationColorProfile
+          name={PERSONAL_DATA.NAME}
+          description={PERSONAL_DATA.HISTORY}
           pdf={CURRICULUM_DATA.CURRICULUM_VITAE}
           imgInformation={IMAGE_DATA.INFORMATION}
-          btnName={'Ver Currículum'}
+          btnName={'CATÁLOGO WIJEX'}
+          color={PERSONAL_DATA.TEMPLATE}
+        />
+        <PlinthColorTitle
+          title={'Galería'}
+          color={PERSONAL_DATA.TEMPLATE}
+        />
+        <Gallery
+          gallery_1={IMAGE_DATA.GALLERY_1}
+          gallery_2={IMAGE_DATA.GALLERY_2}
+          gallery_3={IMAGE_DATA.GALLERY_3}
+        />
+        <PlinthColorTitle
+          title={'Contacto'}
+          color={PERSONAL_DATA.TEMPLATE}
+        />
+        <ContactProfileCover
+          name={PERSONAL_DATA.NAME}
+          email={CONTACT_DATA.EMAIL}
+          phone={CONTACT_DATA.PHONE}
+          address={CONTACT_DATA.ADDRESS}
+          number={CONTACT_DATA.NUMBER}
+          locality={CONTACT_DATA.LOCALITY}
+          province={CONTACT_DATA.PROVINCE}
+          country={CONTACT_DATA.COUNTRY}
+          avatar={IMAGE_DATA.AVATAR}
+          url={'masajes-terapeuticos'}
+        />
+        <PlinthColorTitle
+          title={'Quiero más información'}
+          color={PERSONAL_DATA.TEMPLATE}
+        />
+        <FormContactColor
+          name={PERSONAL_DATA.NAME}
+          email={CONTACT_DATA.EMAIL}
+          color={PERSONAL_DATA.TEMPLATE}
         />
         <SocialMedia
           name={PERSONAL_DATA.NAME}
@@ -56,38 +109,6 @@ const ProfilePage: NextPage = () => {
           wijex={SOCIALNET_DATA.WIJEX}
           telegram={SOCIALNET_DATA.TELEGRAM}
         />
-        <PlinthTitle
-          title={'Galería'}
-        />
-        <Gallery
-          gallery_1={IMAGE_DATA.GALLERY_1}
-          gallery_2={IMAGE_DATA.GALLERY_2}
-          gallery_3={IMAGE_DATA.GALLERY_3}
-        />
-        <PlinthTitle
-          title={'Quiero más información'}
-        />
-        <FormContact
-          name={PERSONAL_DATA.NAME}
-          email={CONTACT_DATA.EMAIL}
-          background={IMAGE_DATA.BACKGROUND}
-          phone={CONTACT_DATA.PHONE}
-          address={CONTACT_DATA.ADDRESS}
-          number={CONTACT_DATA.NUMBER}
-          locality={CONTACT_DATA.LOCALITY}
-          province={CONTACT_DATA.PROVINCE}
-          country={CONTACT_DATA.COUNTRY}
-          avatar={IMAGE_DATA.AVATAR}
-          url={'masajes-terapeuticos'}
-        />
-        {/* <PlinthTitle
-          title={'Quiero más información'}
-        /> */}
-        {/* <FormContactTwo
-          name={PERSONAL_DATA.NAME}
-          email={CONTACT_DATA.EMAIL}
-        /> */}
-
       </Layout>
     </div>
   )

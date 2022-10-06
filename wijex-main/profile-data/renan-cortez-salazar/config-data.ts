@@ -7,11 +7,11 @@ const PERSONAL_DATA = {
 }
 
 const IMAGE_DATA = {
-    BANNER: '/profile/renan-cortez-salazar/RENAN_PORTADA.png', //CAMBIAR DIRECCION DE LAS IMAGENES
+    BANNER: '/profile/renan-cortez-salazar/RENAN_GALERIA-07.png', //CAMBIAR DIRECCION DE LAS IMAGENES
     INFORMATION: '/profile/renan-cortez-salazar/RENAN_GALERIA-03.png',
     AVATAR: '/profile/renan-cortez-salazar/RENAN_PERFIL.png',
     GALLERY_1: '/profile/renan-cortez-salazar/RENAN_GALERIA-04.png',
-    GALLERY_2: '/profile/renan-cortez-salazar/RENAN_GALERIA-05.png',
+    GALLERY_2: '/profile/renan-cortez-salazar/RENAN_GALERIA-08.png',
     GALLERY_3: '/profile/renan-cortez-salazar/RENAN_GALERIA-06.png'
 }
 

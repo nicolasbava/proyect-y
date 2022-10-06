@@ -38,7 +38,7 @@ const Home: NextPage = () => {
         province={CONTACT_DATA.PROVINCE}
         country={CONTACT_DATA.COUNTRY}
         avatar={IMAGE_DATA.AVATAR}
-        url={'algo-nuestro-tallado'}
+        url={'algo-nuestro-tallados'}
       >
         <CoverPage
           name={PERSONAL_DATA.NAME}
@@ -90,7 +90,7 @@ const Home: NextPage = () => {
           province={CONTACT_DATA.PROVINCE}
           country={CONTACT_DATA.COUNTRY}
           avatar={IMAGE_DATA.AVATAR}
-          url={'algo-nuestro-tallado'}
+          url={'algo-nuestro-tallados'}
         />
 
       </Layout>

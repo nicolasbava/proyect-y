@@ -38,7 +38,7 @@ const SOCIALNET_DATA = {
 }
 
 const CURRICULUM_DATA = {
-    CURRICULUM_VITAE: '/profile/algo-nuestro-tallado/ALGO-NUESTRO-TALLADO.pdf'
+    CURRICULUM_VITAE: '/profile/algo-nuestro-tallados/ALGO-NUESTRO-TALLADOS.pdf'
 }
 
 const NONE_DATA = {
