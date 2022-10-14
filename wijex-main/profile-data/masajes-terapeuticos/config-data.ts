@@ -33,10 +33,10 @@ const SOCIALNET_DATA = {
     LINKEDIN: '',
     YOUTUBE: '',
     TWITTER: '',
-    FACEBOOK: '',
+    FACEBOOK: 'https://www.facebook.com/people/Masajista-Piriapolis/100063539646384/',
     INSTAGRAM: 'https://www.instagram.com/p/CNxAu4xHsiU/?igshid=MDJmNzVkMjY=',
     TIKTOK: '',
-    WIJEX: '',
+    WIJEX: 'https://comunidad.wijex.com/JoseGMT',
     TELEGRAM: '',
 }
 

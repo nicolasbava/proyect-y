@@ -19,7 +19,7 @@ const CoverPageDownLeft = (props: CoverPageProps) => {
           alt="CoverPage/png"
         />
         <div className="absolute w-10/12 bottom-10 left-10 lg:bottom-96 lg:left-20 inset-x-0 leading-4">
-          <div className="self-start lg:flex flex-col">
+          <div className="hidden md:block self-start lg:flex flex-col">
             <h1
               className="mb-3 text-xl font-bold leading-none tracking-tighter uppercase title-font md:text-3xl lg:text-5xl"
               style={{ color: props.colorName }}

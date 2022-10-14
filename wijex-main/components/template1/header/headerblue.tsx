@@ -27,7 +27,7 @@ export default function HeaderNav(props: Props) {
         console.log("window.innerHeight", window.innerHeight);
     }, []);
     return (
-        <header className="bg-gradient-to-r from-fourth to-primary">
+        <header className="bg-gradient-to-r sticky from-fourth to-primary">
             <nav className="container mx-auto px-6 md:px-12 py-4">
                 <div className="md:flex justify-between items-center" >
                     <div className="flex justify-between items-center" >

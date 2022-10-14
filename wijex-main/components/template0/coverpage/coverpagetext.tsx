@@ -16,7 +16,7 @@ const CoverPageText = (props: CoverPageProps) => {
         className='max-h-screen mt-20 md:mt-12'
     >
       <div className="relative  ">
-        <div className="mx-auto absolute z-40 top-80 w-1/2 ml-5 mt-5 opacity-0 sm:opacity-100  md:pl-10 md:mt-12 lg:ml-12 lg:pl-12 lg:pt-12"
+        <div className="hidden md:block mx-auto absolute z-40 top-80 w-1/2 ml-5 mt-5 opacity-0 sm:opacity-100  md:pl-10 md:mt-12 lg:ml-12 lg:pl-12 lg:pt-12"
         >
          
             <h1

@@ -19,17 +19,17 @@ const CoverPageBlue = (props: CoverPageProps) => {
     <>
         {/* img de fondo */}
         <div  id='home'
-          className='mt-20 flex flex-col items-baseline justify-end special lg:h-screen lg:mt-16'
-          style={{backgroundImage:`url(${router.basePath + props.coverPageUrl})`, minHeight:'40vh', backgroundSize:'cover', backgroundPosition: 'top center' 
+          className='mt-20 flex flex-col items-baseline justify-end special min-h-full md:mt-28 md:h-screen lg:h-screen lg:mt-16'
+          style={{backgroundImage:`url(${router.basePath + props.coverPageUrl})`, minHeight:'40vh', backgroundSize:'cover', backgroundPosition: 'center center' 
           }}
         > 
 
           {/* cartel alberga texto  */}
-          <div className='opacity-0 text-left sm:w-1/3 pl-10 px-2 sm:px-0 mb-4 h-full sm:text-left sm:ml-10 md:ml-20 md:opacity-100 lg:mt-96 '
+          <div className='pt-4 opacity-0 text-left sm:w-1/3 pl-10 px-2 sm:px-0 mb-4 h-full sm:text-left sm:ml-10 md:ml-20 md:opacity-100 lg:mt-96 '
           >
             {/* NAME - H1 . ADD COLOR FROM PROP */}
             <h1
-              className="mb-3 text-3xl tracking-base font-bold leading-none uppercase title-font md:text-3xl lg:text-5xl"
+              className="mb-3 text-3xl tracking-base font-bold leading-none uppercase title-font md:text-3xl md:w-1/3 lg:text-3xl"
               style={{ color: props.colorName }}
               >
               {props.name}
