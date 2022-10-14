@@ -7,8 +7,10 @@ import { Plinth } from '../../components/template4/plinth/plinth';
 import { Gallery } from '../../components/template4/gallery/gallery';
 import { CoverPage } from '../../components/template4/coverpage/coverpage';
 import { PlinthTitle } from '../../components/template4/plinthtitle/plinthtitle';
-import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/ferreteria-adriancito/config-data';
 import { InformationProfileTextBtn } from '../../components/template4/information/informationtextbtn';
+
+// import data
+import { CONTACT_DATA, CURRICULUM_DATA } from '../../profile-data/ferreteria-adriancito/config-data';
 import { IMAGE_DATA, PERSONAL_DATA, SOCIALNET_DATA } from '../../profile-data/ferreteria-adriancito/config-data';
 
 const Home: NextPage = () => {
@@ -87,7 +89,7 @@ const Home: NextPage = () => {
           province={CONTACT_DATA.PROVINCE}
           country={CONTACT_DATA.COUNTRY}
           avatar={IMAGE_DATA.AVATAR}
-          url={'ferretaria-adriancito'}
+          url={'ferreteria-adriancito'}
         />
 
       </Layout>

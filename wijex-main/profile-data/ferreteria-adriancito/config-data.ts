@@ -1,7 +1,7 @@
 const PERSONAL_DATA = {
-    NAME: 'FERRETERÍA ADRIANCITO',
+    NAME: 'Ferretería Adriancito',
     COLORNAME:'#f00505',
-    DESCRIPTION: 'BUENAS HERRAMIENTAS PARA BUENAS OBRAS',
+    DESCRIPTION: 'Buenas herramientas para buenas obras.',
     COLORDESCRIPTION: '#ff5005',
     HISTORY: 'Somos un emprendimiento familiar que nació para cubrir las necesidades de la zona en este rubro, volcando a su servicio nuestra vasta experiencia en el mundo ferretero.'
 }

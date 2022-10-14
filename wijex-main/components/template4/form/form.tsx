@@ -128,7 +128,7 @@ const FormContact = (props: FormContactProps) => {
                                                 </div>
                                             </div>
                                         </a>
-                                        <a href={`/${props.url}/map`} target="_blank" rel="noopener noreferrer">
+                                        <a href={`/${props.url}/map/`} target="_blank" rel="noopener noreferrer">
                                             <div className="flex items-center mb-3 cursor-pointer" onClick={() => onOpenModal()}>
                                                 <div className="inline-flex items-center justify-center rounded-full flex-shrink-0">
                                                     <img
