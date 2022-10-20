@@ -79,50 +79,54 @@ const FormContactTwo = (props: FormContactProps) => {
                             type="email"
                             value={email}
                             onChange={(value: any) => setEmail(value.currentTarget.value)}
-                            className="block w-full px-4 py-2 mt-2 text-darkblue bg-inputcolor border border-inputcolor rounded-md dark:bg-inputcolor dark:text-primary dark:border-inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
+                            className="block w-full px-4 py-2 mt-2 text-darkblue  bg-inputcolor border border-inputcolor rounded-md dark:bg-inputcolor dark:text-primary dark:border-inputcolor focus:border-blue dark:focus:border-blue-500 focus:outline-none focus:ring" />
                     </div>
                     <div>
                         <label htmlFor="userName" className="pl-4 text-darkblue dark:text-secondary">Nombre</label>
                         <input
                             id="username"
+                            placeholder="ej: Juan Perez"
                             name='userName'
                             type="text"
                             value={userName}
                             onChange={(value: any) => setUserName(value.currentTarget.value)}
-                            className="block w-full  px-4 py-2 mt-2 text-darkblue bg-inputcolor border border-inputcolor rounded-md dark:bg-inputcolor dark:text-primary dark:border-inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
+                            className="block w-full  px-4 py-2 mt-2 text-darkblue bg-inputcolor border-inputcolor rounded-md focus:outline-none transition-all  ring-1 focus:ring" />
                     </div>
 
                     <div>
                         <label className="pl-4 text-darkblue dark:text-secondary">Asunto</label>
                         <input
                             id="subject"
+                            placeholder="ej: Presupuesto"
                             name="subject"
                             type="text"
                             value={subject}
                             onChange={(value: any) => setSubject(value.currentTarget.value)}
-                            className="block w-full px-4 py-2 mt-2 text-darkblue bg-inputcolor border border-inputcolor rounded-md dark:bg-inputcolor dark:text-primary dark:border-inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
+                            className="block w-full px-4 py-2 mt-2   text-darkblue rounded-md dark:bg-inputcolor focus:border-blue-700 transition-all ring-1 focus:ring focus:outline-none   " />
                     </div>
 
                     <div>
                         <label className="pl-4 text-darkblue dark:text-secondary" >E-mail</label>
                         <input
                             id="userEmail"
+                            placeholder="ej: juanPerez@email.com"
                             name="userEmail"
                             type="email"
                             value={userEmail}
                             onChange={(value: any) => setUserEmail(value.currentTarget.value)}
-                            className="block w-full px-4 py-2 mt-2 text-primary bg-inputcolor border border-inputcolor rounded-md dark:bg-inputcolor dark:text-primary dark:border-inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
+                            className="block w-full px-4 py-2 mt-2 text-primary bg-inputcolor border border-inputcolor rounded-md transition-all focus:outline-none ring-1 focus:ring" />
                     </div>
 
                     <div>
                         <label className="pl-4 text-darkblue dark:text-secondary">Teléfono</label>
                         <input
                             id="userPhone"
+                            placeholder="ej: +5896457854"
                             name="userPhone"
                             type="text"
                             value={userPhone}
                             onChange={(value: any) => setUserPhone(value.currentTarget.value)}
-                            className="block w-full px-4 py-2 mt-2 text-primary bg-inputcolor border border-inputcolor rounded-md dark:bg-inputcolor dark:text-primary dark:border-inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring" />
+                            className="block w-full px-4 py-2 mt-2 text-primary bg-inputcolor border border-inputcolor rounded-md transition-all focus:outline-none ring-1 focus:ring" />
                     </div>
                 </div>
                 <div className="grid grid-cols-1 gap-8 mt-4">
@@ -130,10 +134,11 @@ const FormContactTwo = (props: FormContactProps) => {
                         <label className="pl-4 text-darkblue dark:text-secondary">Dejá tu consulta</label>
                         <textarea
                             id="userMessage"
+                            placeholder="Escribe tu mensaje..."
                             name="userMessage"
                             value={userMessage}
                             onChange={(value: any) => setUserMessage(value.currentTarget.value)}
-                            className="block w-full px-4 py-2 mt-2 text-darkblue bg-inputcolor border border-inputcolor rounded-md dark:bg-inputcolor dark:text-primary dark:border-inputcolor focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring duration-200 ease-in-out"></textarea>
+                            className="block w-full px-4 py-2 mt-2 text-darkblue bg-inputcolor border border-inputcolor rounded-md  ring-1 focus:outline-none focus:ring duration-200 ease-in-out"></textarea>
                     </div>
                 </div>
                 <div className="flex justify-center mt-6">

@@ -86,6 +86,7 @@ const FormContact = (props: FormContactProps) => {
                     <div>
                         <label htmlFor="userName" className="pl-4 text-primary dark:text-secondary">Nombre</label>
                         <input
+                            placeholder="ej: Juan Perez"
                             id="username"
                             name='userName'
                             type="text"
@@ -97,6 +98,7 @@ const FormContact = (props: FormContactProps) => {
                     <div>
                         <label className="pl-4 text-primary dark:text-secondary">Asunto</label>
                         <input
+                            placeholder="ej: Presupuesto"
                             id="subject"
                             name="subject"
                             type="text"
@@ -109,6 +111,7 @@ const FormContact = (props: FormContactProps) => {
                         <label className="pl-4 text-primary dark:text-secondary" >E-mail</label>
                         <input
                             id="userEmail"
+                            placeholder="ej: juanPerez@email.com"
                             name="userEmail"
                             type="email"
                             value={userEmail}
@@ -120,6 +123,7 @@ const FormContact = (props: FormContactProps) => {
                         <label className="pl-4 text-primary dark:text-secondary">Teléfono</label>
                         <input
                             id="userPhone"
+                            placeholder="ej: +8568482545"
                             name="userPhone"
                             type="text"
                             value={userPhone}
@@ -132,6 +136,7 @@ const FormContact = (props: FormContactProps) => {
                         <label className="pl-4 text-primary dark:text-secondary">Dejá tu consulta</label>
                         <textarea
                             id="userMessage"
+                            placeholder="Escribe tu mensaje"
                             name="userMessage"
                             value={userMessage}
                             onChange={(value: any) => setUserMessage(value.currentTarget.value)}

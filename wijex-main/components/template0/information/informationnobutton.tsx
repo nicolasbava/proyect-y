@@ -36,7 +36,7 @@ const InformationNoButton = (props: BannerProps) => {
                             <h1 className="mb-3 text-2xl font-bold leading-none tracking-normal uppercase text-blackcolor title-font lg:text-5xl">
                                 {props.name}
                             </h1>
-                            <p className="text-darkgray title-font font-bold text-justify">
+                            <p className="text-darkgray title-font font-bold ">
                                 {props.description}
                             </p>
                             

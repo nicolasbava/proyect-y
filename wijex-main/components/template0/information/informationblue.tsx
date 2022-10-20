@@ -17,7 +17,7 @@ const InformationProfileBlue = (props: BannerProps) => {
     }
     return (
         <section id='informationprofile'>
-            <div className="sm:flex sm:flex-row mx-0 justify-center">
+            <div className="sm:flex sm:flex-row mx-0 lg:pl-24 justify-center">
                 <div className="hidden lg:flex flex-col self-center sm:max-w-5xl xl:max-w-2xl  z-10">
                     <div className="self-start hidden lg:flex flex-col  text-white">
                         <img
@@ -26,7 +26,7 @@ const InformationProfileBlue = (props: BannerProps) => {
                             height={270}
                             
                             alt="logo-wijex"
-                            className="h-56 w-56 object-cover"
+                            className="h-64 w-64 object-cover"
                         />
                     </div>
                 </div>
@@ -36,7 +36,7 @@ const InformationProfileBlue = (props: BannerProps) => {
                             <h1 className="mb-3 text-2xl font-bold leading-none tracking-normal uppercase text-blackcolor title-font lg:text-5xl">
                                 {props.name}
                             </h1>
-                            <p className="text-darkgray title-font font-bold text-justify">
+                            <p className="text-darkgray title-font font-bold ">
                                 {props.description}
                             </p>
                             <div className="pt-6">

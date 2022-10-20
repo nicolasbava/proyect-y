@@ -35,7 +35,7 @@ const InformationProfileSalmon = (props: BannerProps) => {
                             <h1 className="mb-3 text-2xl font-bold leading-none tracking-normal uppercase text-darkgray title-font lg:text-5xl">
                                 {props.name}
                             </h1>
-                            <p className="text-justify text-darkgray title-font font-bold">{props.description}</p>
+                            <p className=" text-darkgray title-font font-bold">{props.description}</p>
                             <div className="pt-6">
                                 <button onClick={() => onResumeClick()} className="px-8 py-3 leading-5 transition-colors duration-200 transform bg-secondary rounded-md hover:bg-secondary focus:outline-none focus:bg-secondary shadow-lg">
                                     <h1 className="mx-auto justify text-l font-semibold leading-none tracking-tighter text-whitecolor title-font lg:text-2xl">

@@ -73,7 +73,7 @@ export default function HeaderNavVertical(props: Props) {
             {/* styled from template3.module.css */}
 
             <div id="Main" className={`${show ? '' : '-translate-x-full'} rounded-tr-xl  absolute top-24 lg:top-0 lg:rounded-none content-start transform lg:translate-x-0 ease-in-out transition duration-500 flex justify-start items-start  w-full h-full base:w-64 flex-col ${styles.customHeader}`}>
-                <div className="xl:flex justify-start p-6 items-center space-x-3">
+                <div className="xl:flex hidden lg:block justify-start p-6 items-center space-x-3">
                     <Link href={'https://www.wijex.com'}>
                         <img src="/logo-wijex-blue.png"
                             width={93.75} height={43.5}

@@ -35,7 +35,7 @@ const InformationProfileWhite = (props: BannerProps) => {
                             <h1 className="mb-3 text-2xl font-bold leading-none tracking-normal uppercase text-darkgray title-font lg:text-5xl">
                                 {props.name}
                             </h1>
-                            <p className="text-justify text-darkgray title-font font-bold">
+                            <p className=" text-darkgray title-font font-bold">
                                 {props.description}
                             </p>
                             <div className="pt-6">
